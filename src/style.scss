@@ -2,13 +2,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap");
 
-$nav-color: #4f2477;
+$main-color: #4f2477;
+$poppins: "Poppins", sans-serif;
+$yellow-color: #f8c765;
 
 body {
   font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  font-family: $poppins;
+}
+
+.btn-primary {
+  background-color: $yellow-color;
+  color: $main-color;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $poppins;
+  border-radius: 0px 0px 0px 0px;
+  padding: 14px 14px 14px 14px;
+
+  span {
+    padding-left: 10px;
+  }
+
+  &:hover {
+    background-color: $main-color;
+    color: #fbf9f6;
+  }
 }
 
 .navbar {
@@ -23,7 +54,7 @@ body {
 
   .nav-link {
     line-height: 32px;
-    color: $nav-color;
+    color: $main-color;
     margin-right: calc(50px / 2);
     margin-left: calc(50px / 2);
     font-size: 18px;
@@ -50,23 +81,50 @@ body {
       font-weight: 500;
       line-height: 18px;
       color: #cb273a;
-      font-family: "Poppins", sans-serif;
+      font-family: $poppins;
     }
 
     h1 {
-        font-size: 65px;
-        font-weight: 500;
-        line-height: 1em;
-        letter-spacing: -1px;
-        color: #4f2477;
+      font-size: 65px;
+      font-weight: 500;
+      line-height: 1em;
+      letter-spacing: -1px;
+      color: $main-color;
     }
 
-    p{
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 36px;
-        font-family: "Poppins", sans-serif;
-        color: #4b4b4b;
+    p {
+      color: #4b4b4b;
+    }
+  }
+}
+
+// assessment
+.assessment {
+  background-color: #5b7402;
+  color: #fff;
+  padding: 70px 0px;
+
+  h5 {
+    color: $yellow-color;
+    font-size: 18px;
+    font-family: $poppins;
+    font-weight: 300;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-weight: 500;
+    line-height: 65px;
+    font-size: 50px;
+  }
+
+  .img-wrapper {
+    box-shadow: 8px 5px 28px -3px rgb(0 0 0 / 23%);
+
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
