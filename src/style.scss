@@ -135,18 +135,17 @@ p {
 }
 
 .journey {
-  .container {
-    margin-left: 0;
-    padding-left: 0;
+  .row {
+    margin-right: 20px;
   }
-
   .img-wrapper img {
     width: 100%;
-    height: auto;
+    height: 650px;
+    object-fit: cover;
   }
 
   .journey-content {
-    padding: 80px 0px 20px 120px;
+    padding: 40px 0px 20px 70px;
 
     h5 {
       color: #cb273a;
@@ -213,3 +212,5 @@ p {
     }
   }
 }
+
+@import "__responsive";

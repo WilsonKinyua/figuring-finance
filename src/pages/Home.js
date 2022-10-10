@@ -1,5 +1,5 @@
 import React from "react";
-// import owner from "../img/2.jpeg";
+import owner from "../img/2.jpeg";
 import journey from "../img/journey.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -14,16 +14,16 @@ export default function App() {
             <div className="col-md-5"></div>
             <div className="col-md-5">
               <div className="homepage-content mb-5 pb-5">
-                <h5>GET THE INSPIRATION YOU NEED TO</h5>
-                <h1 className="mt-3">
-                  Launch To Financial Freedom & Independence.
+                <h5 className="text-uppercase">
+                  GET personal finance education
+                </h5>
+                <h1 className="mt-3 text-capitalize">
+                  Get started with the free Money Revamp Roadmap
                 </h1>
                 <p className="mt-5">
-                  We provide the ideas and resources to help you skyrocket your
-                  savings, blast through your debt and ultimately launch you on
-                  your journey to{" "}
-                  <strong>Financial Freedom & Independence</strong>. Get started
-                  with the Jumpstart guide.
+                  We aim to provide the right personal finance education and
+                  resources to guide you in figuring out your finances and
+                  transforming your money till your accounts are unrecognizable
                 </p>
               </div>
             </div>
@@ -51,7 +51,8 @@ export default function App() {
             <div className="col-md-7">
               <div className="img-wrapper">
                 <img
-                  src="https://journeytolaunch.com/wp-content/uploads/2020/11/JourneyToLaunch18.jpg"
+                  // src="https://journeytolaunch.com/wp-content/uploads/2020/11/JourneyToLaunch18.jpg"
+                  src={owner}
                   alt="owner"
                   className="img-fluid"
                 />
@@ -61,39 +62,37 @@ export default function App() {
         </div>
       </section>
       <section className="journey">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-5">
-              <div className="img-wrapper">
-                <img src={journey} alt="Journey" />
-              </div>
+        <div className="row">
+          <div className="col-md-4">
+            <div className="img-wrapper">
+              <img src={journey} alt="Journey" />
             </div>
-            <div className="col-md-7">
-              <div className="journey-content">
-                <h5>ABOUT JOURNEY TO LAUNCH</h5>
-                <h2>Welcome Journeyer</h2>
-                <p>
-                  You may have stumbled upon one of our podcast episodes, quotes
-                  on instagram, found out about us through an interview or media
-                  feature. Whatever path you took, we’re really glad you’re
-                  here.
-                </p>
-                <p>
-                  This website was made specifically for you–the Journeyer who
-                  is ready to get the ideas and resources that will help you
-                  skyrocket your savings, blast through your debt and ultimately
-                  launch you on your journey{" "}
-                  <strong>Financial Freedom & Independence</strong>. So let’s
-                  jump straight into your exploration with some value packed
-                  tools & resources that you’ve been looking for.
-                </p>
-                <Link className="btn btn-primary btn-lg mt-3">
-                  Read more{" "}
-                  <span>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </span>
-                </Link>
-              </div>
+          </div>
+          <div className="col-md-8">
+            <div className="journey-content">
+              <h5 className="text-uppercase">from our founder</h5>
+              <h2>Welcome To Figuring Finance</h2>
+              <p>
+                I love to teach individuals how to do better with their money,
+                to inspire them to take that bold step and ignite your financial
+                freedom journey.
+              </p>
+              <p>
+                In a dark time in my life I found myself wondering where all my
+                money was going, I could barely save, did not understand the
+                importance of investing, felt stuck and overwhelmed. This led me
+                to invest in my own personal finance education, grow my savings
+                and investment portfolio. What began as a personal journey
+                towards financial stability for my daughter and I was a catalyst
+                for helping others take control of their personal finances and
+                build the life they want to live
+              </p>
+              <Link className="btn btn-primary btn-lg">
+                Read more{" "}
+                <span>
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </span>
+              </Link>
             </div>
           </div>
         </div>
