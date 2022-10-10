@@ -174,32 +174,6 @@ export default function App() {
                 </div>
               </div>
             </div>
-            {/* <div className="row text-center icons g-0">
-              
-                <span className="icon-wrapper">
-                  <img src={support} alt="Support" />
-                  <h5>Support</h5>
-                </span>
-              </div>
-              
-                <span className="icon-wrapper">
-                  <img src={correct} alt="Sound Financial Education" />
-                  <h5>Sound Financial Education</h5>
-                </span>
-              </div>
-              
-                <span className="icon-wrapper">
-                  <img src={brave} alt="Brave" />
-                  <h5>Brave</h5>
-                </span>
-              </div>
-              
-                <span className="icon-wrapper">
-                  <img src={investments} alt="Accessibility" />
-                  <h5>Accessibility</h5>
-                </span>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>

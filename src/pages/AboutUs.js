@@ -1,6 +1,9 @@
 import { Fragment } from "react";
 import about from "../img/about.jpeg";
-
+import support from "../icons/support.png";
+import correct from "../icons/correct.png";
+import brave from "../icons/protest.png";
+import investments from "../icons/investments-accesibility.png";
 export default function AboutUs() {
   return (
     <Fragment>
@@ -26,6 +29,36 @@ export default function AboutUs() {
               <div className="img-wrapper">
                 <img src={about} alt="owner" className="img-fluid" />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-nude-color icons-section">
+        <div className="container">
+          <div className="row text-center icons g-0 ">
+            <div className="col-md-3">
+              <span className="icon-wrapper">
+                <img src={support} alt="Support" />
+                <h5>Support</h5>
+              </span>
+            </div>
+            <div className="col-md-3">
+              <span className="icon-wrapper">
+                <img src={correct} alt="Sound Financial Education" />
+                <h5>Sound Financial Education</h5>
+              </span>
+            </div>
+            <div className="col-md-3">
+              <span className="icon-wrapper">
+                <img src={brave} alt="Brave" />
+                <h5>Brave</h5>
+              </span>
+            </div>
+            <div className="col-md-3">
+              <span className="icon-wrapper">
+                <img src={investments} alt="Accessibility" />
+                <h5>Accessibility</h5>
+              </span>
             </div>
           </div>
         </div>
