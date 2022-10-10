@@ -1,5 +1,6 @@
 import React from "react";
-import owner from "../img/2.jpeg";
+// import owner from "../img/2.jpeg";
+import journey from "../img/journey.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -35,7 +36,7 @@ export default function App() {
             <div className="col-md-5">
               <h5>FREE ASSESSMENT</h5>
               <h2 className="mt-4 mb-4">Unlock your future financial path.</h2>
-              <p>
+              <p className="text-white">
                 Take the quiz to get a shockingly accurate description of where
                 you are and where to go on your journey to Financial
                 Independence.
@@ -54,6 +55,44 @@ export default function App() {
                   alt="owner"
                   className="img-fluid"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="journey">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-5">
+              <div className="img-wrapper">
+                <img src={journey} alt="Journey" />
+              </div>
+            </div>
+            <div className="col-md-7">
+              <div className="journey-content">
+                <h5>ABOUT JOURNEY TO LAUNCH</h5>
+                <h2>Welcome Journeyer</h2>
+                <p>
+                  You may have stumbled upon one of our podcast episodes, quotes
+                  on instagram, found out about us through an interview or media
+                  feature. Whatever path you took, we’re really glad you’re
+                  here.
+                </p>
+                <p>
+                  This website was made specifically for you–the Journeyer who
+                  is ready to get the ideas and resources that will help you
+                  skyrocket your savings, blast through your debt and ultimately
+                  launch you on your journey{" "}
+                  <strong>Financial Freedom & Independence</strong>. So let’s
+                  jump straight into your exploration with some value packed
+                  tools & resources that you’ve been looking for.
+                </p>
+                <Link className="btn btn-primary btn-lg mt-3">
+                  Read more{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

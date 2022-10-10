@@ -18,6 +18,11 @@ p {
   font-weight: 400;
   line-height: 36px;
   font-family: $poppins;
+  color: #4b4b4b;
+}
+
+.bg-main-color {
+  background-color: $main-color;
 }
 
 .btn-primary {
@@ -125,6 +130,86 @@ p {
       height: 500px;
       width: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+.journey {
+  .container {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .journey-content {
+    padding: 80px 0px 20px 120px;
+
+    h5 {
+      color: #cb273a;
+      font-size: 18px;
+      font-family: $poppins;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    h2 {
+      font-weight: 500;
+      line-height: 65px;
+      font-size: 65px;
+      color: $main-color;
+    }
+  }
+}
+
+// footer
+.footer {
+  padding-top: 50px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding-bottom: 10px;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding-left: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 12px;
+
+      &:hover {
+        color: $yellow-color;
+      }
+    }
+  }
+
+  .footer-bottom {
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.72);
+
+      ol {
+        list-style: none;
+      }
+      li {
+        display: inline;
+        a {
+          color: #fff;
+          padding-right: 20px;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $yellow-color;
+      }
     }
   }
 }
