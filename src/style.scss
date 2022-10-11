@@ -146,7 +146,7 @@ p {
   background-position: center;
 
   .homepage-content {
-    padding-top: 170px;
+    padding-top: 130px;
     padding-left: 50px;
 
     h5 {
@@ -168,6 +168,30 @@ p {
     p {
       color: #4b4b4b;
     }
+  }
+
+  .form-guide {
+    margin-top: 40px;
+    .form-control {
+      background-color: #ffffff;
+      border-color: #4b4b4b66;
+      border-width: 1px 1px 1px 1px;
+      border-radius: 0px 0px 0px 0px;
+      min-height: 43px;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+
+  .signature {
+   background-image: url("./img/signature.png"); 
+   height: 100px;
+   width: 200px;
+   background-position: center;
+   background-size: 100% 100%;
   }
 }
 

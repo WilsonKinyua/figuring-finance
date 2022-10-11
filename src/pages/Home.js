@@ -13,7 +13,7 @@ export default function App() {
         <div className="container">
           <div className="row">
             <div className="col-md-5"></div>
-            <div className="col-md-6">
+            <div className="col-md-7">
               <div className="homepage-content mb-5 pb-5">
                 <h5 className="text-uppercase">
                   GET personal finance education
@@ -29,6 +29,39 @@ export default function App() {
                     Get started with the free Money Revamp Roadmap
                   </strong>
                 </p>
+                <form className="form-guide">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className="mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          name="name"
+                          placeholder="Name"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="mb-3">
+                        <input
+                          type="email"
+                          className="form-control"
+                          name="email"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <button
+                        type="submit"
+                        className="btn btn-primary text-uppercase"
+                      >
+                        Send me the guide
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div className="signature"></div>
               </div>
             </div>
           </div>
