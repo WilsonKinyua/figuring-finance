@@ -23,7 +23,7 @@ p {
 }
 
 .bg-main-color {
-  background-color: $main-color;
+  background-color: $green-color;
 }
 
 .btn-primary {
@@ -64,7 +64,7 @@ p {
 
   .nav-link {
     line-height: 32px;
-    color: $main-color;
+    color: $green-color;
     margin-right: calc(50px / 2);
     margin-left: calc(50px / 2);
     font-size: 18px;
@@ -75,12 +75,17 @@ p {
 }
 
 .side-nav {
+  display: none;
   .nav-close {
-    background-color: $main-color;
+    background-color: $green-color;
     font-size: 30px;
     color: #fff;
     padding: 10px;
     margin-left: -40px;
+
+    &:hover {
+      background-color: $main-color;
+    }
   }
   .container {
     padding: 30px 100px 0px 30px;
@@ -137,7 +142,7 @@ p {
   background-image: url("./img/Figuring\ Finance\ Landing.png");
   background-repeat: no-repeat;
   height: 90vh;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
 
   .homepage-content {
