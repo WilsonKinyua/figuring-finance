@@ -5,6 +5,7 @@
 $main-color: #4f2477;
 $poppins: "Poppins", sans-serif;
 $yellow-color: #f8c765;
+$green-color :#5B7402;
 
 body {
   font-family: "Oswald", sans-serif;
@@ -71,10 +72,10 @@ p {
 
 // homepage
 .homepage {
-  background-image: url("https://journeytolaunch.com/wp-content/uploads/2020/11/home-hero1.jpg");
+  background-image: url("./img/Figuring\ Finance\ Landing.png");
   background-repeat: no-repeat;
-  // height: 87vh;
-  background-size: cover;
+  height: 90vh;
+  background-size: 100% 100%;
   background-position: center;
 
   .homepage-content {
@@ -94,7 +95,7 @@ p {
       font-weight: 500;
       line-height: 1em;
       letter-spacing: -1px;
-      color: $main-color;
+      color: $green-color;
     }
 
     p {
@@ -107,7 +108,7 @@ p {
 .assessment {
   background-color: #5b7402;
   color: #fff;
-  padding: 70px 0px;
+  padding: 40px 0px;
 
   h5 {
     color: $yellow-color;
@@ -129,7 +130,8 @@ p {
     img {
       height: 500px;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      border-radius: 5px;
     }
   }
 }

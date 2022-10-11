@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img
-            src="https://journeytolaunch.com/wp-content/uploads/2020/11/jtl-logo-main-color.png"
+            src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png"
             alt="Logo"
           />
         </Link>

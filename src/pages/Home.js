@@ -1,5 +1,6 @@
 import React from "react";
-import owner from "../img/2.jpeg";
+// import landing from "../img/Figuring Finance Landing.png"
+// import owner from "../img/2.jpeg";
 import journey from "../img/journey.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -12,18 +13,21 @@ export default function App() {
         <div className="container">
           <div className="row">
             <div className="col-md-5"></div>
-            <div className="col-md-5">
+            <div className="col-md-6">
               <div className="homepage-content mb-5 pb-5">
                 <h5 className="text-uppercase">
                   GET personal finance education
                 </h5>
                 <h1 className="mt-3 text-capitalize">
-                  Get started with the free Money Revamp Roadmap
+                  Personal Finance & Education Simplified
                 </h1>
                 <p className="mt-5">
                   We aim to provide the right personal finance education and
                   resources to guide you in figuring out your finances and
-                  transforming your money till your accounts are unrecognizable
+                  transforming your money till your accounts are unrecognizable.{" "}
+                  <strong>
+                    Get started with the free Money Revamp Roadmap
+                  </strong>
                 </p>
               </div>
             </div>
@@ -51,8 +55,8 @@ export default function App() {
             <div className="col-md-7">
               <div className="img-wrapper">
                 <img
-                  // src="https://journeytolaunch.com/wp-content/uploads/2020/11/JourneyToLaunch18.jpg"
-                  src={owner}
+                  src="https://images.pexels.com/photos/732444/pexels-photo-732444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  // src={owner}
                   alt="owner"
                   className="img-fluid"
                 />
