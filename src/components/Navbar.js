@@ -7,10 +7,10 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img
+          {/* <img
             src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png"
             alt="Logo"
-          />
+          /> */}
         </Link>
         <button
           className="navbar-toggler"
