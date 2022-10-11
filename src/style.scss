@@ -5,13 +5,13 @@
 $main-color: #4f2477;
 $poppins: "Poppins", sans-serif;
 $yellow-color: #f8c765;
-$green-color :#5B7402;
+$green-color: #5b7402;
 
 body {
   font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F7F1EC;
+  background-color: #f7f1ec;
 }
 
 p {
@@ -53,9 +53,9 @@ p {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
-    .navbar-brand {
-      padding: 40px;
-    }
+  .navbar-brand {
+    padding: 40px;
+  }
 
   // .navbar-brand img {
   //   height: 80px;
@@ -71,6 +71,64 @@ p {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3.6px;
+  }
+}
+
+.side-nav {
+  .nav-close {
+    background-color: $main-color;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+    margin-left: -40px;
+  }
+  .container {
+    padding: 30px 100px 0px 30px;
+  }
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f7f1ec;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  height: 100%;
+
+  .side-logo {
+    padding: 30px 0px;
+
+    img {
+      height: 40px;
+    }
+  }
+
+  hr {
+    color: $green-color;
+  }
+
+  .nav-item .nav-link {
+    font-size: 18px;
+    line-height: 32px;
+    color: $green-color;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .social {
+    display: flex;
+    list-style: none;
+
+    li {
+      padding-right: 30px;
+      font-size: 20px;
+      a {
+        color: $green-color;
+      }
+    }
   }
 }
 
