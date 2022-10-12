@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.738488b6.css",
+    "main.css": "/static/css/main.ac62c34c.css",
     "main.js": "/static/js/main.c820f8ae.js",
     "static/media/journey.jpeg": "/static/media/journey.7b7f5c527cedbe2d261e.jpeg",
     "static/media/Figuring Finance Landing.png": "/static/media/Figuring Finance Landing.7df8129b791f12c31eda.png",
     "static/media/signature.png": "/static/media/signature.d687083df27414e3bf79.png",
     "index.html": "/index.html",
-    "main.738488b6.css.map": "/static/css/main.738488b6.css.map",
+    "main.ac62c34c.css.map": "/static/css/main.ac62c34c.css.map",
     "main.c820f8ae.js.map": "/static/js/main.c820f8ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.738488b6.css",
+    "static/css/main.ac62c34c.css",
     "static/js/main.c820f8ae.js"
   ]
 }
