@@ -11,33 +11,18 @@ export default function Footer() {
   return (
     <footer className="bg-main-color footer">
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-5">
-            <ul className="list-unstyled mb-0">
-              <li>
-                <Link>Start Here</Link>
-              </li>
-              <li>
-                <Link>About</Link>
-              </li>
-              <li>
-                <Link>Contact</Link>
-              </li>
-              <li>
-                <Link>Debt management</Link>
-              </li>
-              <li>
-                <Link>Budgeting</Link>
-              </li>
-              <li>
-                <Link>Wealth creation</Link>
-              </li>
-            </ul>
+        <div className="row">
+          <div className="col-md-12 text-center footer-top">
+            <p>
+              <Link>Start Here</Link> <Link>About</Link> <Link>Contact</Link>{" "}
+              <Link>Debt management</Link> <Link>Budgeting</Link>{" "}
+              <Link>Wealth creation</Link>
+            </p>
           </div>
         </div>
         <div className="row footer-bottom">
           <div className="col-sm-12 text-center">
-            <p className="mb-4 text-white mt-4">
+            <p className="mb-4 text-white">
               <ol className="social mb-0">
                 <li>
                   <a href="/" target="_blank" rel="noopener noreferrer">

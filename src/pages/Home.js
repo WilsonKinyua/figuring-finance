@@ -103,12 +103,12 @@ export default function App() {
       </section>
       <section className="journey">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-5">
             <div className="img-wrapper">
               <img src={journey} alt="Journey" />
             </div>
           </div>
-          <div className="col-md-8">
+          <div className="col-md-7">
             <div className="journey-content">
               <h5 className="text-uppercase">from our founder</h5>
               <h2>Welcome To Figuring Finance</h2>
