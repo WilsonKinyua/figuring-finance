@@ -67,7 +67,9 @@ export default function App() {
           </div>
         </div>
       </section>
-      <div className="seen-logo"></div>
+      <section>
+        <div className="purple-bg"></div>
+      </section>
       <section className="assessment">
         <div className="container">
           <div className="row">
