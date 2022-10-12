@@ -117,7 +117,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li
-                  className="nav-item"
+                  className="nav-item display-sm-none"
                   onClick={() => {
                     $(".side-nav").css("display", "block").hide().slideDown();
                   }}
@@ -126,6 +126,23 @@ export default function Navbar() {
                     <FontAwesomeIcon icon={faBars} />
                   </Link>
                 </li>
+                <span className="display-sm-block">
+                  <li className="nav-item">
+                    <Link to="/" className="nav-link">
+                      Debt management
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-link">
+                      Budgeting
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-link">
+                      Wealth creation
+                    </Link>
+                  </li>
+                </span>
               </ul>
             </div>
           </div>

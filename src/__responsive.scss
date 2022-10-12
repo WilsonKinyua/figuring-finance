@@ -1,4 +1,10 @@
 @media (max-width: 768px) {
+  .display-sm-none {
+    display: none;
+  }
+  .display-sm-block {
+    display: block;
+  }
   .homepage {
     background-image: none;
   }
@@ -66,7 +72,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-  
 }
 
 @media (max-width: 1024px) {
