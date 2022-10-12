@@ -5,14 +5,19 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 export default function Navbar() {
   return (
     <>
       <div className="side-nav">
-        <Link className="nav-close">
+        <Link
+          className="nav-close"
+          onClick={() => {
+            $(".side-nav").css("display", "none");
+          }}
+        >
           <FontAwesomeIcon icon={faXmark} />
         </Link>
         <div className="container">
@@ -111,7 +116,12 @@ export default function Navbar() {
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li
+                  className="nav-item"
+                  onClick={() => {
+                    $(".side-nav").css("display", "block").hide().slideDown();
+                  }}
+                >
                   <Link className="nav-link" id="menu-bar">
                     <FontAwesomeIcon icon={faBars} />
                   </Link>
