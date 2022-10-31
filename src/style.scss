@@ -5,7 +5,8 @@
 $main-color: #4f2477;
 $poppins: "Poppins", sans-serif;
 $yellow-color: #f8c765;
-$green-color: #cbccb4;
+$green-color: #5B7403;
+$light-green: #cbccb4;
 $light-yellow: #cea78b;
 
 body {
@@ -28,7 +29,7 @@ p {
 }
 
 .btn-primary {
-  background-color: $green-color;
+  background-color: $light-green;
   color: $main-color;
   text-transform: uppercase;
   border: none;
@@ -169,7 +170,7 @@ p {
       font-weight: 500;
       line-height: 1em;
       letter-spacing: -1px;
-      color: $green-color;
+      color: $light-green;
     }
 
     p {
@@ -254,7 +255,7 @@ p {
     padding: 40px 0px 20px 40px;
 
     h5 {
-      color: #cb273a;
+      color: $light-yellow;
       font-size: 18px;
       font-family: $poppins;
       font-weight: 500;
