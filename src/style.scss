@@ -5,7 +5,8 @@
 $main-color: #4f2477;
 $poppins: "Poppins", sans-serif;
 $yellow-color: #f8c765;
-$green-color: #5b7402;
+$green-color: #cbccb4;
+$light-yellow: #cea78b;
 
 body {
   font-family: "Oswald", sans-serif;
@@ -27,7 +28,7 @@ p {
 }
 
 .btn-primary {
-  background-color: $yellow-color;
+  background-color: $green-color;
   color: $main-color;
   text-transform: uppercase;
   border: none;
@@ -145,19 +146,21 @@ p {
 .homepage {
   background-image: url("./img/Figuring\ Finance\ Landing.png");
   background-repeat: no-repeat;
-  height: auto;
+  width: 100%;
+  // height: 90vh;
+  height: max-content;
   background-size: cover;
   background-position: center;
 
   .homepage-content {
-    padding-top: 130px;
+    margin-top: 100px;
     padding-left: 50px;
 
     h5 {
       font-size: 18px;
       font-weight: 500;
       line-height: 18px;
-      color: #cb273a;
+      color: $light-yellow;
       font-family: $poppins;
     }
 

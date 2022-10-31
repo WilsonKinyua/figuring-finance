@@ -19,7 +19,7 @@ export default function App() {
                   GET personal finance education
                 </h5>
                 <h1 className="mt-3 text-capitalize">
-                  Personal Finance & Education Simplified
+                  Personal Finance Education Simplified
                 </h1>
                 <p className="mt-5">
                   We aim to provide the right personal finance education and
