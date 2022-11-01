@@ -17,6 +17,14 @@ body {
   background-color: #f7f1ec;
 }
 
+a {
+  text-decoration: none;
+}
+
+.border-none {
+  border: none;
+}
+
 p {
   font-size: 20px;
   font-weight: 400;
@@ -51,7 +59,7 @@ p {
   }
 }
 
-.btn-bg-secondary{
+.btn-bg-secondary {
   background-color: $light-yellow;
 }
 
@@ -332,6 +340,19 @@ p {
         color: $yellow-color;
       }
     }
+  }
+}
+
+// blogs page
+.blogs {
+  img {
+    // height: 350px;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+  a {
+    color: $green-color;
   }
 }
 

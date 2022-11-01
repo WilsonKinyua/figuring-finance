@@ -116,6 +116,11 @@ export default function Navbar() {
                     Contact
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link to="/blog" className="nav-link">
+                    Blog
+                  </Link>
+                </li>
                 <li
                   className="nav-item display-sm-none"
                   onClick={() => {
