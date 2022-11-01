@@ -378,6 +378,12 @@ p {
       color: $yellow-color;
     }
   }
+
+  img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
 }
 
 // not found page
