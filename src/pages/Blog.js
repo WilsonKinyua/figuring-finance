@@ -11,7 +11,7 @@ export default function Blog() {
         </div>
         {blogs.map((blog) => (
           <div className="col-md-3 text-center" key={blog.id}>
-            <Link to={`/blog/${blog.slug}`}>
+            <Link to={`/article/${blog.slug}`}>
               <div className="card mb-3 border-none">
                 <img
                   src={blog.image}

@@ -117,8 +117,8 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/blogs" className="nav-link">
-                    Blog
+                  <Link to="/articles" className="nav-link">
+                    articles
                   </Link>
                 </li>
                 <li

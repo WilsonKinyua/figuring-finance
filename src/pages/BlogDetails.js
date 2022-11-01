@@ -55,7 +55,7 @@ export default function BlogDetails() {
               {blogs.map((blog) => (
                 <div className="recent-posts" key={blog.id}>
                   <p>
-                    <Link to={`/blog/${blog.slug}`}>
+                    <Link to={`/article/${blog.slug}`}>
                       <FontAwesomeIcon icon={faAngleRight} /> {blog.title}
                     </Link>
                   </p>
@@ -68,7 +68,7 @@ export default function BlogDetails() {
               {categories.map((category) => (
                 <div className="recent-posts" key={category.id}>
                   <p>
-                    <Link to={`/blog/category/${category.slug}`}>
+                    <Link to={`/article/category/${category.slug}`}>
                       <FontAwesomeIcon icon={faAngleRight} /> {category.name}
                     </Link>
                   </p>

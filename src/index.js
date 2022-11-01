@@ -17,8 +17,8 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blogs" element={<Blog />} />
-        <Route path="/blog/:blogSlug" element={<BlogDetails />} />
+        <Route path="/articles" element={<Blog />} />
+        <Route path="/article/:blogSlug" element={<BlogDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
