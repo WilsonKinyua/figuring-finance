@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6827f36d.css",
-    "main.js": "/static/js/main.4e5990a3.js",
+    "main.js": "/static/js/main.eae8e69d.js",
     "static/media/journey.jpeg": "/static/media/journey.b1e0765ab71ccdf62b21.jpeg",
     "static/media/Figuring Finance Landing.png": "/static/media/Figuring Finance Landing.bd4c9f4450974565f2cc.png",
     "static/media/signature.png": "/static/media/signature.d687083df27414e3bf79.png",
@@ -9,10 +9,10 @@
     "static/media/protest.png": "/static/media/protest.5e82845633e81a5d6e4b.png",
     "index.html": "/index.html",
     "main.6827f36d.css.map": "/static/css/main.6827f36d.css.map",
-    "main.4e5990a3.js.map": "/static/js/main.4e5990a3.js.map"
+    "main.eae8e69d.js.map": "/static/js/main.eae8e69d.js.map"
   },
   "entrypoints": [
     "static/css/main.6827f36d.css",
-    "static/js/main.4e5990a3.js"
+    "static/js/main.eae8e69d.js"
   ]
 }
