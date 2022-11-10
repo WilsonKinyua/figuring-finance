@@ -1,4 +1,7 @@
 import { Fragment } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import landing from "../img/Figuring Finance Landing.png"
 // import owner from "../img/2.jpeg";
 import journey from "../img/journey.jpeg";
@@ -11,6 +14,14 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function App() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
   return (
     <Fragment>
       <section className="homepage">
@@ -164,25 +175,25 @@ export default function App() {
               </div>
             </div>
             {/* <div className="row text-center icons g-0">
-              <div className="col-md-3">
+              
                 <span className="icon-wrapper">
                   <img src={support} alt="Support" />
                   <h5>Support</h5>
                 </span>
               </div>
-              <div className="col-md-3">
+              
                 <span className="icon-wrapper">
                   <img src={correct} alt="Sound Financial Education" />
                   <h5>Sound Financial Education</h5>
                 </span>
               </div>
-              <div className="col-md-3">
+              
                 <span className="icon-wrapper">
                   <img src={brave} alt="Brave" />
                   <h5>Brave</h5>
                 </span>
               </div>
-              <div className="col-md-3">
+              
                 <span className="icon-wrapper">
                   <img src={investments} alt="Accessibility" />
                   <h5>Accessibility</h5>
@@ -220,6 +231,154 @@ export default function App() {
                 ></iframe>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="testimonies">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center mt-3 mb-3">
+              <h2 className="main-color">Testimonies</h2>
+            </div>
+          </div>
+          <div className="text-center">
+            <Slider {...settings}>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      Hey Njams, merry christmas! Hope you and Malaika have been
+                      existing to the fullest since we last spoke. I just wanted
+                      to let you know that I recently cleared my entire credit
+                      card balance! I appreciate you, and am thankful for the
+                      counsel you offered by letting God use you to motivate me
+                      this direction. May God bless you as you achieve your
+                      wildest dreams.
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      Hey Njambi, I would like to express my appreciation for
+                      your ability to help me with budgeting and financial
+                      management. I’m in a better place now than I was last year
+                      because of you. I have learned a lot from you. You are a
+                      great financial coach and you were able to shed some light
+                      by showing me how to value tracking my daily spending and
+                      by saving. Also how to invest in stocks and opening online
+                      savings accounts for emergency funds. I can never thank
+                      you enough.
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      Hello, I trust that you are well. I would like to take
+                      this opportunity by saying Thank-you so so much, the no
+                      spend challenge taught me how to be disciplined with my
+                      money. I was able to keep track of how much I was spending
+                      as making a wholesale purchase of food rather from the
+                      supermarket getting vegetables at the market , asking
+                      myself over and over do I really want to purchase certain
+                      items or do I really need these Items. And lastly i really
+                      did save more! The Challenge was great hope to have more
+                      and more coming. Thank you once again Manuella Kind
+                      Regards
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      I would like to take this opportunity by saying Thank-you
+                      so so much, the no spend challenge taught me how to be
+                      disciplined with the purchases I made was able to keep
+                      track of how much I was spending as making a wholesale
+                      purchase of food rather from the supermarket getting
+                      vegetables at the market , asking myself over and over do
+                      I really want to purchase certain items or do I really
+                      need these Items. And lastly i really did save more! The
+                      Challenge was great hope to have more and more coming.
+                      Thankyou once Manuella
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      My experience was amazing and such an eye opener, asi go
+                      to acquire a sense of awareness in tracking my spending. I
+                      also got to see how much money i can save if i stop
+                      spending on things i shouldn't be spending on.
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      Hi Njambi! I hope you are doing well and are having a good
+                      week! Thank you again for putting on the 10-day No Spend
+                      Challenge. This was the first of its kind that I have done
+                      before in order to keep track of my spending habits and
+                      focus on what is a necessity rather than a want. The 10
+                      days really accomplished this and helped me not only
+                      realize how many non-budget spendings I do, but also how I
+                      need to build consistency in making a budget and sticking
+                      to it. This challenge gave me great next steps (learning
+                      how to budget effectively being the main one) to take to
+                      be able to manage my finances well. What resources or
+                      advice do you have in regards to budgeting? I have seen
+                      your posts on figuring finance and would definitely like
+                      to lean into them. Overall I thoroughly enjoyed the
+                      stretch this challenge gave - didn't feel impossible but
+                      definitely pushed and brought a much needed challenge.
+                      Thank you again for spearheading this! Have a great week
+                      and I look forward to hearing from you! Best,
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      No spend challenge savings. I do alot of take out. The
+                      money I saved in 10 days, bought these 2 to assist me cook
+                      more n buy eliminate take out. Unless for special
+                      occasions. I'm proud of the knowledge that I can save for
+                      something away from my normal salary budget.
+                    </q>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <p className="card-text">
+                    <q>
+                      Hey. This is the best thing I have ever done in my soon to
+                      be 39 years. I have learned how to manage my money. 1. I
+                      have for the first time paid myself first. 2. I have been
+                      able to reduce a debt that was weighing me down since I
+                      have had my budget streamlined. I'm a happy lass. I don't
+                      regret learning this now. Thanks Manuella. To many more
+                      lessons and growth.
+                    </q>
+                  </p>
+                </div>
+              </div>
+            </Slider>
           </div>
         </div>
       </section>

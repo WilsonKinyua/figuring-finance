@@ -83,6 +83,13 @@
   .video-wrapper iframe {
     height: auto;
   }
+
+  .testimonies {
+  
+    .card .card-body {
+      height: auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 992px) {
