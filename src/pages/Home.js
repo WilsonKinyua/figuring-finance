@@ -195,20 +195,21 @@ export default function App() {
       <section className="assessment podcast">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <h5>LISTEN TO THE PODCAST</h5>
-              <h2 className="mt-4 mb-4">The Award Winning Podcast</h2>
-              <h6 className="main-color text-italic">with Jamila Souffrant</h6>
+            <div className="col-md-7">
+              <h2 className="mt-4 mb-4">Ancient Financial Wisdom</h2>
               <p className="pt-3">
-                Our crowd pleasing podcast will give you the courage, hope, and
-                tools that you need to launch your own journey into financial
-                independence. Check out the latest podcast episode and dive into
-                any of the hundreds of episodes that are inspiring our community
-                of journeyers. We’ve curated the top categories to get you
-                started.
+                In this insightful talk we discussed;
+                <ul>
+                  <li>How do you make your money work for you?</li>
+                  <li>
+                    What are some common myths about some investments that hold
+                    some people back?
+                  </li>
+                  <li>How does one know where to invest?</li>
+                </ul>
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-5">
               <div className="video-wrapper">
                 <iframe
                   src="https://www.youtube.com/embed/k9LsphV9hi8"

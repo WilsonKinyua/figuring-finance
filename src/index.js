@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./components/NotFound";
+import AboutUs from "./pages/AboutUs";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/articles" element={<Blog />} />
         <Route path="/article/:blogSlug" element={<BlogDetails />} />
         <Route path="*" element={<NotFound />} />
