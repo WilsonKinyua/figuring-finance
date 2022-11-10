@@ -1,18 +1,18 @@
-import React from "react";
+import { Fragment } from "react";
 // import landing from "../img/Figuring Finance Landing.png"
 // import owner from "../img/2.jpeg";
 import journey from "../img/journey.jpeg";
-import support from "../icons/support.png";
-import correct from "../icons/correct.png";
-import brave from "../icons/protest.png";
-import investments from "../icons/investments-accesibility.png";
+// import support from "../icons/support.png";
+// import correct from "../icons/correct.png";
+// import brave from "../icons/protest.png";
+// import investments from "../icons/investments-accesibility.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <React.Fragment>
+    <Fragment>
       <section className="homepage">
         <div className="container">
           <div className="row">
@@ -131,18 +131,39 @@ export default function App() {
                     grow my savings and investment portfolio. What began as a
                     personal journey towards financial stability for my daughter
                     and I was a catalyst for helping others take control of
-                    their personal finances and build the life they want to live
+                    their personal finances and build the life they want to
+                    live. You may have come across our Instagram page, other
+                    social media handles, or a media interview whichever way you
+                    found us we are glad you are here!
                   </p>
-                  <Link className="btn btn-primary btn-lg mt-3">
+                  <p>
+                    This website was made with you in mind to help you on your
+                    financial freedom journey. You will find here resources,
+                    actionable tools and our services provided to help you in
+                    figuring out your personal finances. This is a journey you
+                    will not regret taking.
+                  </p>
+                  <p>
+                    Taking control of your money is a powerful tool that you can
+                    utilize to build the life you want through actionable steps
+                    such as:
+                    <ul>
+                      <li>Budgeting and Tracking your Spending</li>
+                      <li>Saving and Investing</li>
+                      <li>Ditching debt</li>
+                      <li>Building real wealth</li>
+                    </ul>
+                  </p>
+                  {/* <Link className="btn btn-primary btn-lg mt-3">
                     Read more{" "}
                     <span>
                       <FontAwesomeIcon icon={faArrowRight} />
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
-            <div className="row text-center icons g-0">
+            {/* <div className="row text-center icons g-0">
               <div className="col-md-3">
                 <span className="icon-wrapper">
                   <img src={support} alt="Support" />
@@ -167,10 +188,40 @@ export default function App() {
                   <h5>Accessibility</h5>
                 </span>
               </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+      <section className="assessment podcast">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <h5>LISTEN TO THE PODCAST</h5>
+              <h2 className="mt-4 mb-4">The Award Winning Podcast</h2>
+              <h6 className="main-color text-italic">with Jamila Souffrant</h6>
+              <p className="pt-3">
+                Our crowd pleasing podcast will give you the courage, hope, and
+                tools that you need to launch your own journey into financial
+                independence. Check out the latest podcast episode and dive into
+                any of the hundreds of episodes that are inspiring our community
+                of journeyers. We’ve curated the top categories to get you
+                started.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/k9LsphV9hi8"
+                  title="Jam 316 Financial Clinic - 12/10/2022 (Ancient Financial wisdom)"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </Fragment>
   );
 }

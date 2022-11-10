@@ -25,10 +25,18 @@ a {
   border: none;
 }
 
+.main-color {
+  color: $green-color;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
 p {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 31px;
   font-family: $poppins;
   color: #4b4b4b;
 }
@@ -398,5 +406,22 @@ p {
     font-size: 100px;
     color: $green-color;
   }
+}
+
+.podcast {
+  background-color: #fff;
+  color: #000;
+
+  h2 {
+    color: $green-color;
+  }
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 @import "__responsive";
