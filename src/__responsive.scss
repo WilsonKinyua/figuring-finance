@@ -85,8 +85,13 @@
   }
 
   .testimonies {
-  
     .card .card-body {
+      height: auto;
+    }
+  }
+
+  .the-journey-2 {
+    .img-wrapper img {
       height: auto;
     }
   }

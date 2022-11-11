@@ -23,7 +23,7 @@ export default function BlogDetails() {
       <div className="row">
         <div className="col-md-9 order-1 order-2">
           <div className="card border-none mb-5">
-            <img src={image} className="card-img-top mb-2" alt={title} />
+            <img src={image} className="card-img-top mb-2" alt={title} loading="lazy"/>
             <div className="card-body">
               <div>{parse(description)}</div>
             </div>

@@ -17,6 +17,7 @@ export default function Blog() {
                   src={blog.image}
                   className="card-img-top"
                   alt={blog.title}
+                  loading="lazy"
                 />
                 <div className="card-body">
                   <h5 className="card-title">{blog.title}</h5>

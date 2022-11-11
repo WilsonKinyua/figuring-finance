@@ -107,9 +107,9 @@ export default function App() {
               <div className="img-wrapper">
                 <img
                   src="https://images.pexels.com/photos/732444/pexels-photo-732444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  // src={owner}
                   alt="owner"
                   className="img-fluid"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function App() {
         <div className="row" style={{ marginRight: "20px" }}>
           <div className="col-md-5">
             <div className="img-wrapper">
-              <img src={journey} alt="Journey" />
+              <img src={journey} alt="Journey" loading="lazy" />
             </div>
           </div>
           <div className="col-md-7">
