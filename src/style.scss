@@ -357,6 +357,10 @@ p {
   a {
     color: $green-color;
   }
+
+  .card-body {
+    height: 100px;
+  }
 }
 
 .search-form {
