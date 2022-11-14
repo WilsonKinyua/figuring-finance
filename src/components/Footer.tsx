@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="row">
           <div className="col-md-12 text-center footer-top">
             <p>
-              <Link>Start Here</Link> <Link>About</Link> <Link>Contact</Link>{" "}
-              <Link>Debt management</Link> <Link>Budgeting</Link>{" "}
-              <Link>Wealth creation</Link>
+              <Link to="/">Start Here</Link> <Link to="/">About</Link> <Link to="/">Contact</Link>{" "}
+              <Link to="/">Debt management</Link> <Link to="/">Budgeting</Link>{" "}
+              <Link to="/">Wealth creation</Link>
             </p>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
                 </li>
               </ol>
               © Copyright {new Date().getFullYear()}{" "}
-              <Link>Figuring Finance</Link> All Rights Reserved
+              <Link to="/">Figuring Finance</Link> All Rights Reserved
             </p>
           </div>
         </div>

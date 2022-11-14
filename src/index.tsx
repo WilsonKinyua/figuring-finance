@@ -11,7 +11,7 @@ import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./components/NotFound";
 import AboutUs from "./pages/AboutUs";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <BrowserRouter>

@@ -29,7 +29,12 @@ export default function AboutUs() {
             </div>
             <div className="col-md-5">
               <div className="img-wrapper">
-                <img loading="lazy" src={about} alt="owner" className="img-fluid" />
+                <img
+                  loading="lazy"
+                  src={about}
+                  alt="owner"
+                  className="img-fluid"
+                />
               </div>
             </div>
           </div>
@@ -46,7 +51,11 @@ export default function AboutUs() {
             </div>
             <div className="col-md-3">
               <span className="icon-wrapper">
-                <img loading="lazy" src={correct} alt="Sound Financial Education" />
+                <img
+                  loading="lazy"
+                  src={correct}
+                  alt="Sound Financial Education"
+                />
                 <h5>Sound Financial Education</h5>
               </span>
             </div>
@@ -86,7 +95,10 @@ export default function AboutUs() {
                       independence, and along the way discover financial
                       freedom.
                     </p>
-                    <Link className="btn btn-primary btn-lg mt-3 text-uppercase">
+                    <Link
+                      to="/"
+                      className="btn btn-primary btn-lg mt-3 text-uppercase"
+                    >
                       join our facebook community
                     </Link>
                   </div>

@@ -7,25 +7,31 @@ import {
 } from "../fake-backend";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faSearch } from "@fortawesome/free-solid-svg-icons";
+// import Blog from "../models/Blog";
 
 export default function BlogDetails() {
   const { blogSlug } = useParams();
-  const { title, description, image } = getBlogBySlug(blogSlug);
+  const blogDetails: any = getBlogBySlug(blogSlug as string);
   const blogs = FakeBlogsBackend();
   const categories = getCategories();
   return (
     <div className="container blog-details">
       <div className="row">
         <div className="col-md-12 text-center">
-          <h1 className="mt-5 mb-5">{title}</h1>
+          <h1 className="mt-5 mb-5">{blogDetails.title}</h1>
         </div>
       </div>
       <div className="row">
         <div className="col-md-9 order-1 order-2">
           <div className="card border-none mb-5">
-            <img src={image} className="card-img-top mb-2" alt={title} loading="lazy"/>
+            <img
+              src={blogDetails.image}
+              className="card-img-top mb-2"
+              alt={blogDetails.title}
+              loading="lazy"
+            />
             <div className="card-body">
-              <div>{parse(description)}</div>
+              <div>{parse(blogDetails.description)}</div>
             </div>
           </div>
         </div>
