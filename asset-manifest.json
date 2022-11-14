@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.82d8180e.css",
-    "main.js": "/static/js/main.2b00ab64.js",
+    "main.js": "/static/js/main.48f49f9d.js",
     "static/media/journey.jpeg": "/static/media/journey.b1e0765ab71ccdf62b21.jpeg",
     "static/media/Figuring Finance Landing.png": "/static/media/Figuring Finance Landing.bd4c9f4450974565f2cc.png",
     "static/media/about.jpeg": "/static/media/about.0cfd85aa3132e893e891.jpeg",
@@ -15,10 +15,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.82d8180e.css.map": "/static/css/main.82d8180e.css.map",
-    "main.2b00ab64.js.map": "/static/js/main.2b00ab64.js.map"
+    "main.48f49f9d.js.map": "/static/js/main.48f49f9d.js.map"
   },
   "entrypoints": [
     "static/css/main.82d8180e.css",
-    "static/js/main.2b00ab64.js"
+    "static/js/main.48f49f9d.js"
   ]
 }
