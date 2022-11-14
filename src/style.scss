@@ -24,6 +24,26 @@ a {
 .border-none {
   border: none;
 }
+.border-radius {
+  border-radius: 5px;
+}
+
+.remove-box-outline {
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.line-below::after {
+  background-color: $green-color;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 15px 0;
+  width: 80px;
+}
 
 .main-color {
   color: $green-color;
@@ -466,6 +486,60 @@ p {
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: 5px;
+  }
+}
+
+// contact us
+.contact-us {
+  input {
+    background-color: #ffffff;
+    min-height: 48px;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      color: #a2a0a0;
+      font-size: 14px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $green-color;
+    }
+
+    @extend .remove-box-outline;
+  }
+
+  textarea {
+    background-color: #ffffff;
+    &:hover,
+    &:focus {
+      border-color: $green-color;
+    }
+    &::placeholder {
+      color: #a2a0a0;
+      font-size: 14px;
+    }
+    @extend .remove-box-outline;
+  }
+
+  .contact-info {
+    a {
+      color: #212529;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+
+      &:hover {
+        color: $green-color !important;
+      }
+    }
+
+    .contact-list-info {
+      .contact-icon {
+        float: left;
+        margin-right: 23px;
+      }
+    }
   }
 }
 

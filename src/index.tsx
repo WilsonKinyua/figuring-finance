@@ -10,8 +10,11 @@ import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./components/NotFound";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -19,6 +22,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/articles" element={<Blog />} />
         <Route path="/article/:blogSlug" element={<BlogDetails />} />
         <Route path="*" element={<NotFound />} />
