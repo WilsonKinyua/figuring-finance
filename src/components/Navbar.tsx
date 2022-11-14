@@ -12,7 +12,8 @@ export default function Navbar() {
   return (
     <>
       <div className="side-nav">
-        <Link to="/"
+        <Link
+          to="#"
           className="nav-close"
           onClick={() => {
             $(".side-nav").css("display", "none");
@@ -127,7 +128,7 @@ export default function Navbar() {
                     $(".side-nav").css("display", "block").hide().slideDown();
                   }}
                 >
-                  <Link to="/" className="nav-link" id="menu-bar">
+                  <Link to="#" className="nav-link" id="menu-bar">
                     <FontAwesomeIcon icon={faBars} />
                   </Link>
                 </li>

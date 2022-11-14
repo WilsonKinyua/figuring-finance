@@ -33,7 +33,7 @@ export default function AboutUs() {
                   loading="lazy"
                   src={about}
                   alt="owner"
-                  className="img-fluid"
+                  className="img-fluid border-radius"
                 />
               </div>
             </div>
