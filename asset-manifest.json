@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.4825749f.css",
-    "main.js": "/static/js/main.a41130c5.js",
+    "main.js": "/static/js/main.9f9cf65a.js",
     "static/media/journey.jpeg": "/static/media/journey.b1e0765ab71ccdf62b21.jpeg",
     "static/media/Figuring Finance Landing.png": "/static/media/Figuring Finance Landing.bd4c9f4450974565f2cc.png",
-    "static/media/about.jpeg": "/static/media/about.0cfd85aa3132e893e891.jpeg",
+    "static/media/about.jpeg": "/static/media/about.4199df452faed303300a.jpeg",
     "static/media/stand.jpeg": "/static/media/stand.d5bfea5a646a04d4bb10.jpeg",
     "static/media/signature.png": "/static/media/signature.d687083df27414e3bf79.png",
     "static/media/support.png": "/static/media/support.d9301907baa758d4d93e.png",
@@ -15,10 +15,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.4825749f.css.map": "/static/css/main.4825749f.css.map",
-    "main.a41130c5.js.map": "/static/js/main.a41130c5.js.map"
+    "main.9f9cf65a.js.map": "/static/js/main.9f9cf65a.js.map"
   },
   "entrypoints": [
     "static/css/main.4825749f.css",
-    "static/js/main.a41130c5.js"
+    "static/js/main.9f9cf65a.js"
   ]
 }
