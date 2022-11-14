@@ -65,6 +65,20 @@ p {
   color: #4b4b4b;
 }
 
+.modal-header {
+  border-bottom: none;
+}
+
+.read-more {
+  color: $green-color;
+  background-color: transparent;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    color: $lighter-green;
+  }
+}
+
 .bg-main-color {
   background-color: $green-color;
 }
@@ -465,6 +479,11 @@ p {
       display: flex;
       align-items: center;
     }
+  }
+
+  .quote-left {
+    font-size: 40px;
+    color: $green-color;
   }
 }
 

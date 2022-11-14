@@ -46,6 +46,57 @@ const categories = [
   },
 ];
 
+const quotes = [
+  {
+    id: 1,
+    name: "",
+    testimony_description:
+      "Hey Njams, merry christmas! Hope you and Malaika have been existing to the fullest since we last spoke. I just wanted to let you know that I recently cleared my entire credit card balance! I appreciate you, and am thankful for the counsel you offered by letting God use you to motivate me this direction. May God bless you as you achieve your wildest dreams.",
+  },
+  {
+    id: 2,
+    name: "",
+    testimony_description:
+      "Hey Njambi, I would like to express my appreciation for your ability to help me with budgeting and financial management. I’m in a better place now than I was last year because of you. I have learned a lot from you. You are a great financial coach and you were able to shed some light by showing me how to value tracking my daily spending and by saving. Also how to invest in stocks and opening online savings accounts for emergency funds. I can never thank you enough.",
+  },
+  {
+    id: 3,
+    name: "",
+    testimony_description:
+      "Hello, I trust that you are well. I would like to take this opportunity by saying Thank-you so so much, the no spend challenge taught me how to be disciplined with my money. I was able to keep track of how much I was spending as making a wholesale purchase of food rather from the supermarket getting vegetables at the market , asking myself over and over do I really want to purchase certain items or do I really need these Items. And lastly i really did save more! The Challenge was great hope to have more and more coming. Thank you once again Manuella Kind Regards",
+  },
+  {
+    id: 4,
+    name: "",
+    testimony_description:
+      "I would like to take this opportunity by saying Thank-you so so much, the no spend challenge taught me how to be disciplined with the purchases I made was able to keep track of how much I was spending as making a wholesale purchase of food rather from the supermarket getting vegetables at the market , asking myself over and over do I really want to purchase certain items or do I really need these Items. And lastly i really did save more! The Challenge was great hope to have more and more coming. Thankyou once Manuella",
+  },
+  {
+    id: 5,
+    name: "",
+    testimony_description:
+      "My experience was amazing and such an eye opener, asi go to acquire a sense of awareness in tracking my spending. I also got to see how much money i can save if i stop spending on things i shouldn't be spending on.",
+  },
+  {
+    id: 6,
+    name: "",
+    testimony_description:
+      "Hi Njambi! I hope you are doing well and are having a good week! Thank you again for putting on the 10-day No Spend Challenge. This was the first of its kind that I have done before in order to keep track of my spending habits and focus on what is a necessity rather than a want. The 10 days really accomplished this and helped me not only realize how many non-budget spendings I do, but also how I need to build consistency in making a budget and sticking to it. This challenge gave me great next steps (learning how to budget effectively being the main one) to take to be able to manage my finances well. What resources or advice do you have in regards to budgeting? I have seen your posts on figuring finance and would definitely like to lean into them. Overall I thoroughly enjoyed the stretch this challenge gave - didn't feel impossible but definitely pushed and brought a much needed challenge. Thank you again for spearheading this! Have a great week and I look forward to hearing from you! Best,",
+  },
+  {
+    id: 7,
+    name: "",
+    testimony_description:
+      "No spend challenge savings. I do alot of take out. The money I saved in 10 days, bought these 2 to assist me cook more n buy eliminate take out. Unless for special occasions. I'm proud of the knowledge that I can save for something away from my normal salary budget.",
+  },
+  {
+    id: 8,
+    name: "",
+    testimony_description:
+      "Hey. This is the best thing I have ever done in my soon to be 39 years. I have learned how to manage my money. 1. I have for the first time paid myself first. 2. I have been able to reduce a debt that was weighing me down since I have had my budget streamlined. I'm a happy lass. I don't regret learning this now. Thanks Manuella. To many more lessons and growth.",
+  },
+];
+
 export function FakeBlogsBackend() {
   return DUMMY_BLOGS;
 }
@@ -56,4 +107,8 @@ export function getCategories() {
 
 export function getBlogBySlug(slug: string) {
   return DUMMY_BLOGS.find((blog) => blog.slug === slug);
+}
+
+export function getTestimonies() {
+  return quotes;
 }
