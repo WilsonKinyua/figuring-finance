@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe5fc818.css",
-    "main.js": "/static/js/main.b9d9c83f.js",
+    "main.css": "/static/css/main.d15ab651.css",
+    "main.js": "/static/js/main.7eeecfbf.js",
     "static/media/journey.jpeg": "/static/media/journey.b1e0765ab71ccdf62b21.jpeg",
     "static/media/Figuring Finance Landing.png": "/static/media/Figuring Finance Landing.bd4c9f4450974565f2cc.png",
     "static/media/about.jpeg": "/static/media/about.4199df452faed303300a.jpeg",
     "static/media/stand.jpeg": "/static/media/stand.d5bfea5a646a04d4bb10.jpeg",
+    "static/media/bg-card.png": "/static/media/bg-card.b6fcb02ce0a8437b973b.png",
     "static/media/signature.png": "/static/media/signature.d687083df27414e3bf79.png",
     "static/media/support.png": "/static/media/support.d9301907baa758d4d93e.png",
     "static/media/protest.png": "/static/media/protest.5e82845633e81a5d6e4b.png",
@@ -14,11 +15,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.fe5fc818.css.map": "/static/css/main.fe5fc818.css.map",
-    "main.b9d9c83f.js.map": "/static/js/main.b9d9c83f.js.map"
+    "main.d15ab651.css.map": "/static/css/main.d15ab651.css.map",
+    "main.7eeecfbf.js.map": "/static/js/main.7eeecfbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe5fc818.css",
-    "static/js/main.b9d9c83f.js"
+    "static/css/main.d15ab651.css",
+    "static/js/main.7eeecfbf.js"
   ]
 }
