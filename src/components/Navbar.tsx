@@ -113,15 +113,15 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    href="#"
+                    to="#"
                   >
                     Services
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link
