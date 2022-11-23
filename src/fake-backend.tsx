@@ -97,6 +97,15 @@ const quotes = [
   },
 ];
 
+// const Services = [
+//   {
+//     id: 1,
+//     name: "Budgeting",
+//     description:
+//     ""
+//   }
+// ]
+
 export function FakeBlogsBackend() {
   return DUMMY_BLOGS;
 }

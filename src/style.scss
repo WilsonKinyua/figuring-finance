@@ -7,7 +7,6 @@ $poppins: "Poppins", sans-serif;
 $yellow-color: #f8c765;
 $green-color: #91996a;
 $light-green: #cbccb4;
-$lighter-green: #91996a;
 $light-yellow: #cea78b;
 
 body {
@@ -75,7 +74,7 @@ p {
   border: none;
   &:hover {
     cursor: pointer;
-    color: $lighter-green;
+    color: $green-color;
   }
 }
 
@@ -103,6 +102,11 @@ p {
     background-color: $main-color;
     color: #fbf9f6;
   }
+}
+
+.btn-enroll-now {
+  border-radius: 50px;
+  margin-bottom: 30px;
 }
 
 .btn-bg-secondary {
@@ -137,12 +141,24 @@ p {
   .nav-link {
     line-height: 32px;
     color: $green-color;
-    margin-right: calc(50px / 2);
-    margin-left: calc(50px / 2);
-    font-size: 18px;
+    margin-right: calc(20px / 2);
+    margin-left: calc(20px / 2);
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3.6px;
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      .dropdown-item {
+        color: $green-color;
+        &:hover {
+          color: $green-color;
+          background-color: transparent;
+        }
+      }
+    }
   }
 }
 
@@ -558,6 +574,38 @@ p {
         float: left;
         margin-right: 23px;
       }
+    }
+  }
+}
+.coaching {
+  font-family: $poppins;
+
+  h4 {
+    font-weight: 900;
+    line-height: 30px;
+    color: $green-color;
+  }
+
+  svg {
+    font-size: 50px;
+    color: $green-color;
+    padding: 20px 10px;
+  }
+  .card {
+    background-image: url("./img/bg-card.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 50px;
+    border-bottom: 3px solid $green-color;
+    height: 550px;
+  }
+
+  ol {
+    li {
+      line-height: 26px;
+      font-weight: 300;
+      color: #2a2a2a;
     }
   }
 }

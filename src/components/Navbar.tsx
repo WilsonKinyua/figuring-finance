@@ -112,6 +112,27 @@ export default function Navbar() {
                     About
                   </Link>
                 </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    Services
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li className="nav-item">
+                      <Link
+                        to="/services/1-1-coaching"
+                        className="dropdown-item"
+                      >
+                        1:1 Coaching
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
                 <li className="nav-item">
                   <Link to="/contact" className="nav-link">
                     Contact

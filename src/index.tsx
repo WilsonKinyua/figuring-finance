@@ -11,6 +11,7 @@ import BlogDetails from "./pages/BlogDetails";
 import NotFound from "./components/NotFound";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import OneOnOneCoaching from "./pages/services/OneOnOneCoaching";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -23,6 +24,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/services/1-1-coaching" element={<OneOnOneCoaching />} />
         <Route path="/articles" element={<Blog />} />
         <Route path="/article/:blogSlug" element={<BlogDetails />} />
         <Route path="*" element={<NotFound />} />
