@@ -95,6 +95,12 @@ const quotes = [
     testimony_description:
       "Hey. This is the best thing I have ever done in my soon to be 39 years. I have learned how to manage my money. 1. I have for the first time paid myself first. 2. I have been able to reduce a debt that was weighing me down since I have had my budget streamlined. I'm a happy lass. I don't regret learning this now. Thanks Manuella. To many more lessons and growth.",
   },
+  {
+    id: 9,
+    name: "",
+    testimony_description:
+      "Thank you so much for your help I also decided to deduct any adhoc requests for cash from my own entertainment spend, rather than creating a pool dedicated to that. Also, I've been focusing on some of the indicators you mentioned and I've been able to manage one person that constantly asks me for cash. I don't think he likes my new approach very much but its helping. Thank you so much for all vour help. ",
+  },
 ];
 
 // const Services = [
