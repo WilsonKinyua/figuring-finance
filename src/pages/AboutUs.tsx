@@ -40,7 +40,8 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="bg-nude-color icons-section">
+      <div className="stripe"></div>
+      {/* <section className="bg-nude-color icons-section">
         <div className="container">
           <div className="row text-center icons g-0 ">
             <div className="col-md-3">
@@ -73,7 +74,7 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="journey the-journey-2 mt-3 mb-3">
         <div className="container">
           <div className="row">

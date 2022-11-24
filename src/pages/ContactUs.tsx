@@ -7,13 +7,13 @@ export default function ContactUs() {
     <Fragment>
       <section className="pt-5 mb-5 contact-us">
         <div className="container">
-          <div className="row g-0">
+          <div className="row">
             <div className="col-lg-6">
               <div className="contact-info">
                 <h1 className="line-below main-color text-uppercase">
                   Talk to us
                 </h1>
-                <div className="contact-list-info">
+                {/* <div className="contact-list-info">
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={faPhone} />
                   </div>
@@ -44,6 +44,13 @@ export default function ContactUs() {
                   </div>
                   <p className="text-dark">
                     &nbsp;Consummate Court, Ole Dume Road, Nairobi, Kenya
+                  </p>
+                </div> */}
+                <div className="contact-list-info">
+                  <p>
+                    If you have questions or would like to inquire about
+                    Figuring Finance, please fill out the form and we will be
+                    in touch with you as soon as possible.
                   </p>
                 </div>
               </div>
