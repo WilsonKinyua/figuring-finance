@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 import about from "../img/about.jpeg";
-import support from "../icons/support.png";
-import correct from "../icons/correct.png";
-import brave from "../icons/protest.png";
+// import support from "../icons/support.png";
+// import correct from "../icons/correct.png";
+// import brave from "../icons/protest.png";
 import stand from "../img/stand.jpeg";
-import investments from "../icons/investments-accesibility.png";
+// import investments from "../icons/investments-accesibility.png";
 import { Link } from "react-router-dom";
 export default function AboutUs() {
   return (

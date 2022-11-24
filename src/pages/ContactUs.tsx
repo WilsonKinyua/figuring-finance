@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faMap } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope, faPhone, faMap } from "@fortawesome/free-solid-svg-icons";
 
 export default function ContactUs() {
   return (
