@@ -99,7 +99,7 @@ const quotes = [
     id: 9,
     name: "",
     testimony_description:
-      "Thank you so much for your help I also decided to deduct any adhoc requests for cash from my own entertainment spend, rather than creating a pool dedicated to that. Also, I've been focusing on some of the indicators you mentioned and I've been able to manage one person that constantly asks me for cash. I don't think he likes my new approach very much but its helping. Thank you so much for all vour help. ",
+      "Thank you so much for your help I also decided to deduct any adhoc requests for cash from my own entertainment spend, rather than creating a pool dedicated to that. Also, I've been focusing on some of the indicators you mentioned and I've been able to manage one person that constantly asks me for cash. I don't think he likes my new approach very much but its helping. Thank you so much for all your help. ",
   },
 ];
 
