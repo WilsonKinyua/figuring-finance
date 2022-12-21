@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.a764a0ce.css",
-    "main.js": "/static/js/main.456b8c97.js",
+    "main.css": "/static/css/main.408c22c6.css",
+    "main.js": "/static/js/main.b2e1c676.js",
     "static/media/journey.jpeg": "/static/media/journey.b1e0765ab71ccdf62b21.jpeg",
     "static/media/Figuring Finance Landing.png": "/static/media/Figuring Finance Landing.bd4c9f4450974565f2cc.png",
     "static/media/about.jpeg": "/static/media/about.4199df452faed303300a.jpeg",
     "static/media/stand.jpeg": "/static/media/stand.d5bfea5a646a04d4bb10.jpeg",
+    "static/media/logo.png": "/static/media/logo.5814a59d4a3caff23136.png",
     "static/media/signature.png": "/static/media/signature.d687083df27414e3bf79.png",
     "static/media/bg-card.png": "/static/media/bg-card.21908408a03fe9673991.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -13,11 +14,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.a764a0ce.css.map": "/static/css/main.a764a0ce.css.map",
-    "main.456b8c97.js.map": "/static/js/main.456b8c97.js.map"
+    "main.408c22c6.css.map": "/static/css/main.408c22c6.css.map",
+    "main.b2e1c676.js.map": "/static/js/main.b2e1c676.js.map"
   },
   "entrypoints": [
-    "static/css/main.a764a0ce.css",
-    "static/js/main.456b8c97.js"
+    "static/css/main.408c22c6.css",
+    "static/js/main.b2e1c676.js"
   ]
 }
