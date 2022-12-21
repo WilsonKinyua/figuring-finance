@@ -40,7 +40,20 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <div className="stripe"></div>
+      <div className="opportunities">
+        <div className="bg-main">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-md-6 text-center text-content">
+                <p className="text-white">
+                  Your relationship with money is shaped by your past, but it
+                  doesn't have to define your future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <section className="bg-nude-color icons-section">
         <div className="container">
           <div className="row text-center icons g-0 ">

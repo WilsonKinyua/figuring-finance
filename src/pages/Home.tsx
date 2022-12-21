@@ -4,8 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import journey from "../img/journey.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import {faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { getTestimonies } from "../fake-backend";
 
 export default function App() {
@@ -85,23 +84,15 @@ export default function App() {
       <section className="assessment">
         <div className="container">
           <div className="row">
-            <div className="col-md-5">
-              <h5>FREE ASSESSMENT</h5>
-              <h2 className="mt-4 mb-4">Unlock your future financial path.</h2>
+            <div className="col-md-5 mt-4">
+              <h2 className="mt-5 mb-4">Unlock your future financial path.</h2>
               <p className="text-white">
-                Take the quiz to get a shockingly accurate description of where
-                you are and where to go on your journey to Financial
-                Independence.
+                Are you ready to unlock your future financial path? If so,
+                congratulations on taking the first step towards a brighter
+                financial future. Personal finance can seem daunting at first,
+                but with the right tools and guidance, it can be a rewarding and
+                empowering journey.
               </p>
-              <Link
-                to="/"
-                className="btn btn-primary btn-lg mt-3 btn-bg-secondary"
-              >
-                Read more{" "}
-                <span>
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </span>
-              </Link>
             </div>
             <div className="col-md-7">
               <div className="img-wrapper">
@@ -236,7 +227,7 @@ export default function App() {
                                   200
                                 )}...`
                               : testimony.testimony_description} */}
-                              {testimony.testimony_description}
+                            {testimony.testimony_description}
                           </q>
                         </p>
                         {/* <p>

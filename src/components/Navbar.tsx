@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import logo from "../img/logo.png";
 
 export default function Navbar() {
   return (
@@ -24,10 +25,7 @@ export default function Navbar() {
         <div className="container">
           <div className="side-logo">
             <Link to="/">
-              <img
-                src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png"
-                alt="Logo"
-              />
+              <img src={logo} alt="Figuring Finance Logo" />
             </Link>
           </div>
           <div className="side-menu">
@@ -82,10 +80,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            {/* <img
-            src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png"
-            alt="Logo"
-          /> */}
+            <img src={logo} alt="Figuring Finance Logo" />
           </Link>
           <button
             className="navbar-toggler"

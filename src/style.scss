@@ -134,14 +134,10 @@ p {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
-  .navbar-brand {
-    padding: 40px;
+  .navbar-brand img {
+    height: 90px;
+    width: 100%;
   }
-
-  // .navbar-brand img {
-  //   height: 80px;
-  //   width: 100%;
-  // }
 
   .nav-link {
     line-height: 32px;
@@ -526,6 +522,27 @@ p {
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: 5px;
+  }
+}
+
+.opportunities {
+  background-image: url("https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  .bg-main {
+    background-color: #91996ad6;
+  }
+
+  .text-content {
+    padding: 150px 0px;
+    p {
+      font-weight: 900;
+      line-height: 40px;
+      font-size: 20px;
+    }
   }
 }
 
