@@ -13,17 +13,28 @@ export default function AboutUs() {
         <div className="container">
           <div className="row">
             <div className="col-md-7">
-              <div className="about-us-content pt-5 mt-5">
+              <div className="about-us-content pt-3 mt-4">
                 <h5 className="text-uppercase">ABOUT</h5>
                 <h1 className="mt-3 text-capitalize main-color">
                   The Journey to Launch Story
                 </h1>
-                <p className="mt-5">
-                  Journey to Launch emerged in 2016 by founder Jamila Souffrant
-                  initially as one person’s expedition to reach financial
-                  independence. After one year of logging her transformational
-                  growth to Financial Independence, the blog piqued the interest
-                  of a larger audience which inspired the launch of the podcast.
+                <p className="mt-3">
+                  Figuring Finance was founded in 2021 with the goal of helping
+                  individuals learn about managing, growing, and investing their
+                  money in a relatable and non-judgmental way. In the first year
+                  and a half, we offered free content, and as we continued to
+                  grow, we began to offer coaching programs to help those who
+                  were feeling stuck and needed more guidance. It has been an
+                  amazing experience to see our vision come to fruition.
+                </p>
+                <p className="mt-1">
+                  Figuring Finance was founded in 2021 with the goal of helping
+                  individuals learn about managing, growing, and investing their
+                  money in a relatable and non-judgmental way. In the first year
+                  and a half, we offered free content, and as we continued to
+                  grow, we began to offer coaching programs to help those who
+                  were feeling stuck and needed more guidance. It has been an
+                  amazing experience to see our vision come to fruition.
                 </p>
               </div>
             </div>
