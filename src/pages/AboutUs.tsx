@@ -28,13 +28,11 @@ export default function AboutUs() {
                   amazing experience to see our vision come to fruition.
                 </p>
                 <p className="mt-1">
-                  Figuring Finance was founded in 2021 with the goal of helping
-                  individuals learn about managing, growing, and investing their
-                  money in a relatable and non-judgmental way. In the first year
-                  and a half, we offered free content, and as we continued to
-                  grow, we began to offer coaching programs to help those who
-                  were feeling stuck and needed more guidance. It has been an
-                  amazing experience to see our vision come to fruition.
+                  We are here to help you on your journey to figuring out your
+                  finances. We hope that our informative content, tools, and
+                  resources will be valuable to you. We are rooting for you and
+                  will be with you every step of the way. With dedication,
+                  patience, and resilience, you can reach your financial goals
                 </p>
               </div>
             </div>
