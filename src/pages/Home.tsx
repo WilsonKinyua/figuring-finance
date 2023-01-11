@@ -66,6 +66,7 @@ export default function App() {
                       <button
                         type="submit"
                         className="btn btn-primary text-uppercase"
+                        disabled
                       >
                         Send me the guide
                       </button>

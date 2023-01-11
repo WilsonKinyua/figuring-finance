@@ -87,7 +87,10 @@ p {
   background-color: $green-color;
 }
 
-.btn-primary {
+.btn-primary,
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn {
   background-color: #91996a;
   color: #fff;
   text-transform: uppercase;
