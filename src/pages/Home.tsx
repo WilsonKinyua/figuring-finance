@@ -203,7 +203,7 @@ export default function App() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center mt-3 mb-3">
-              <h2 className="main-color">Testimonies</h2>
+              <h2 className="main-color">Testimonials</h2>
             </div>
           </div>
           <div className="text-center">

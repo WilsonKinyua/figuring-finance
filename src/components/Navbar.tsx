@@ -1,10 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 import logo from "../img/logo.png";
@@ -54,23 +50,21 @@ export default function Navbar() {
             <hr />
             <ul className="social mb-0">
               <li>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-              <li>
-                <a href="/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/figuring_finance/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faEnvelope} />
+                <a
+                  href="https://www.youtube.com/@figuringfinance8159"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faYoutube} />
                 </a>
               </li>
             </ul>

@@ -5,7 +5,6 @@ import about from "../img/about.jpeg";
 // import brave from "../icons/protest.png";
 import stand from "../img/stand.jpeg";
 // import investments from "../icons/investments-accesibility.png";
-import { Link } from "react-router-dom";
 export default function AboutUs() {
   return (
     <Fragment>
@@ -104,26 +103,73 @@ export default function AboutUs() {
               <div className="row">
                 <div className="col-md-12">
                   <div className="journey-content">
-                    <h2 className="mt-4 mb-4">The Journey is Far From Over</h2>
+                    <h2 className="mb-4">The Journey is Far From Over</h2>
                     <p>
-                      With over 135,000 dedicated Journeyers in the community,
-                      our mission here at Journey to Launch is to help you
-                      eliminate debt, save more money and increase your net
-                      worth so that you can ultimately achieve Financial Freedom
-                      & Independence.
+                      Money can feel overwhelming and when there is no clear way
+                      to begin it can affect you mentally and even physically:
                     </p>
                     <p>
-                      We’re here to open you up to a universe where you can
-                      realize what’s possible for you to reach financial
-                      independence, and along the way discover financial
-                      freedom.
+                      <strong>Financial anxiety:</strong> where you worry
+                      constantly about money and feel something bad could happen
+                      to your money at any given moment
                     </p>
-                    <Link
-                      to="/"
-                      className="btn btn-primary btn-lg mt-3 text-uppercase"
-                    >
-                      join our facebook community
-                    </Link>
+                    <p>
+                      <strong>Financial stress:</strong> According to a study
+                      done in America “
+                      <a
+                        href="https://www.apa.org/news/press/releases/stress/2020/sia-mental-health-crisis.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="main-color"
+                      >
+                        Stress in America 2020: A National Mental Health Crisis
+                      </a>
+                      ”. 64% of adults stated that money is a major source of
+                      stress in their lives.
+                    </p>
+                    <p>
+                      According to{" "}
+                      <a
+                        href="https://www.menshealth.com/health/a36489551/money-stress-heart-health/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="main-color"
+                      >
+                        Mens Health
+                      </a>{" "}
+                      stated that financial stress is right up the alley of the
+                      stressors that can predispose one to heart disease.
+                    </p>
+                    <p>
+                      We at Figuring Finance care about your overall financial
+                      wellness and urge you not to ignore your financial state
+                      potentially causing other underlying illnesses. Let us
+                      control what we can control and take that bold step to
+                      change our lives.
+                    </p>
+                    <h6>
+                      3 stages every beginner takes in figuring out their
+                      personal finances:
+                    </h6>
+                    <ul>
+                      <li>
+                        <strong>Financial adulting:</strong> Something in your
+                        life wakes you up to start caring about your personal
+                        finances it could be moving out, handling more
+                        responsibilities etc.
+                      </li>
+                      <li>
+                        <strong>Investing in your financial literacy:</strong>{" "}
+                        Making an investment of money and/or time to learn how
+                        to manage your money, to learn how money, banks and
+                        financial systems really work.
+                      </li>
+                      <li>
+                        <strong>The bold step:</strong> Take the action to apply
+                        what you have learnt. To change what needs to be changed
+                        and do the WORK to better your money journey
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
