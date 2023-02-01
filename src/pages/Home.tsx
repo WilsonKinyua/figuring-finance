@@ -4,10 +4,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import journey from "../img/journey.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { getTestimonies } from "../fake-backend";
+import { useRef, useState } from "react";
 
 export default function App() {
+  const API_URL = "https://cms-figuring-finance.wezadevelopments.com";
+
+  const userName = useRef<HTMLInputElement>(null);
+  const userEmail = useRef<HTMLInputElement>(null);
+
+  const [error, setError] = useState<string | null>(false as any);
+  const [success, setSuccess] = useState<string | null>(false as any);
+  const [preloader, setPreloader] = useState<boolean>(false);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -17,6 +27,37 @@ export default function App() {
     autoplay: true,
   };
   const testimonies = getTestimonies();
+
+  // on submit of form
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    setPreloader(true);
+    const name = userName.current?.value;
+    const email = userEmail.current?.value;
+    if (name && email) {
+      fetch(`${API_URL}/api/subscriptions`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setPreloader(false);
+          setSuccess(data.message);
+        })
+        .catch((err) => {
+          setPreloader(false);
+          console.log(err);
+        });
+    } else {
+      setError("Please fill all fields");
+    }
+  };
 
   return (
     <Fragment>
@@ -40,7 +81,11 @@ export default function App() {
                     Get started with the free Money Revamp Roadmap
                   </strong>
                 </p>
-                <form className="form-guide">
+                {error && <div className="alert alert-danger">{error}</div>}
+                {success && (
+                  <div className="alert alert-success">{success}</div>
+                )}
+                <form className="form-guide" onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-md-4">
                       <div className="mb-3">
@@ -49,6 +94,9 @@ export default function App() {
                           className="form-control"
                           name="name"
                           placeholder="Name"
+                          id="name"
+                          ref={userName}
+                          required
                         />
                       </div>
                     </div>
@@ -59,6 +107,9 @@ export default function App() {
                           className="form-control"
                           name="email"
                           placeholder="Email"
+                          id="email"
+                          ref={userEmail}
+                          required
                         />
                       </div>
                     </div>
@@ -66,9 +117,8 @@ export default function App() {
                       <button
                         type="submit"
                         className="btn btn-primary text-uppercase"
-                        disabled
                       >
-                        Send me the guide
+                        {preloader ? "Loading..." : "Send me the guide"}
                       </button>
                     </div>
                   </div>
