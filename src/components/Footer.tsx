@@ -11,8 +11,8 @@ export default function Footer() {
             <p>
               <Link to="/">Start Here</Link> <Link to="/about">About</Link>{" "}
               <Link to="/contact">Contact</Link>{" "}
-              <Link to="/">Debt management</Link> <Link to="/">Budgeting</Link>{" "}
-              <Link to="/">Wealth creation</Link>
+              {/* <Link to="/">Debt management</Link> <Link to="/">Budgeting</Link>{" "}
+              <Link to="/">Wealth creation</Link> */}
             </p>
           </div>
         </div>
