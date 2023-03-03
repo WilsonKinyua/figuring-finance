@@ -9,7 +9,7 @@ import { getTestimonies } from "../fake-backend";
 import { useRef, useState } from "react";
 
 export default function App() {
-  const API_URL = "https://cms.figuring-finance.com";
+  const API_URL = "https://cms-figuring-finance.wezadevelopments.com";
 
   const userName = useRef<HTMLInputElement>(null);
   const userEmail = useRef<HTMLInputElement>(null);
