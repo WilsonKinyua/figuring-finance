@@ -2,12 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap");
 
-$main-color: #4f2477;
 $poppins: "Poppins", sans-serif;
-$yellow-color: #f8c765;
-$green-color: #91996a;
-$light-green: #cbccb4;
-$light-yellow: #cea78b;
+$navy-blue: #2f455c;
+$orange: #f1592a;
 
 body {
   font-family: "Oswald", sans-serif;
@@ -36,7 +33,7 @@ a {
 }
 
 .line-below::after {
-  background-color: $green-color;
+  background-color: $navy-blue;
   content: "";
   display: block;
   height: 3px;
@@ -45,11 +42,15 @@ a {
 }
 
 .main-color {
-  color: $green-color;
+  color: $navy-blue;
+}
+
+.orange-color {
+  color: $orange;
 }
 
 .bg-nude-color {
-  background-color: $light-yellow;
+  background-color: $orange;
 }
 
 .text-italic {
@@ -69,29 +70,29 @@ p {
 }
 
 .read-more {
-  color: $green-color;
+  color: $navy-blue;
   background-color: transparent;
   border: none;
   &:hover {
     cursor: pointer;
-    color: $green-color;
+    color: $navy-blue;
   }
 }
 
 .stripe {
-  background-color: $light-green;
+  background-color: $navy-blue;
   padding: 10px 0;
 }
 
 .bg-main-color {
-  background-color: $green-color;
+  background-color: $navy-blue;
 }
 
 .btn-primary,
 .btn:disabled,
 .btn.disabled,
 fieldset:disabled .btn {
-  background-color: #91996a;
+  background-color: $navy-blue;
   color: #fff;
   text-transform: uppercase;
   border: none;
@@ -107,7 +108,7 @@ fieldset:disabled .btn {
   }
 
   &:hover {
-    background-color: $main-color;
+    background-color: $navy-blue;
     color: #fbf9f6;
   }
 }
@@ -118,7 +119,7 @@ fieldset:disabled .btn {
 }
 
 .btn-bg-secondary {
-  background-color: $light-yellow;
+  background-color: $orange;
 }
 
 .display-sm-block {
@@ -127,7 +128,7 @@ fieldset:disabled .btn {
 
 .slick-prev:before,
 .slick-next:before {
-  color: $green-color !important;
+  color: $navy-blue !important;
 }
 .slick-dots li button:before {
   display: none;
@@ -143,7 +144,7 @@ fieldset:disabled .btn {
 
   .nav-link {
     line-height: 32px;
-    color: $green-color;
+    color: $navy-blue;
     margin-right: calc(20px / 2);
     margin-left: calc(20px / 2);
     font-size: 16px;
@@ -155,9 +156,9 @@ fieldset:disabled .btn {
   .dropdown {
     .dropdown-menu {
       .dropdown-item {
-        color: $green-color;
+        color: $navy-blue;
         &:hover {
-          color: $green-color;
+          color: $navy-blue;
           background-color: transparent;
         }
       }
@@ -168,14 +169,14 @@ fieldset:disabled .btn {
 .side-nav {
   display: none;
   .nav-close {
-    background-color: $green-color;
+    background-color: $navy-blue;
     font-size: 30px;
     color: #fff;
     padding: 10px;
     margin-left: -40px;
 
     &:hover {
-      background-color: $main-color;
+      background-color: $navy-blue;
     }
   }
   .container {
@@ -199,18 +200,18 @@ fieldset:disabled .btn {
   }
 
   hr {
-    color: $green-color;
+    color: $navy-blue;
   }
 
   .nav-item .nav-link {
     font-size: 18px;
     line-height: 32px;
-    color: $green-color;
+    color: $navy-blue;
     text-transform: uppercase;
     letter-spacing: 5px;
 
     &:hover {
-      color: $main-color;
+      color: $navy-blue;
     }
   }
 
@@ -222,7 +223,7 @@ fieldset:disabled .btn {
       padding-right: 30px;
       font-size: 20px;
       a {
-        color: $green-color;
+        color: $navy-blue;
       }
     }
   }
@@ -246,7 +247,7 @@ fieldset:disabled .btn {
       font-size: 18px;
       font-weight: 500;
       line-height: 18px;
-      color: $light-yellow;
+      color: $orange;
       font-family: $poppins;
     }
 
@@ -255,7 +256,7 @@ fieldset:disabled .btn {
       font-weight: 500;
       line-height: 1em;
       letter-spacing: -1px;
-      color: #91996a;
+      color: $navy-blue;
     }
 
     p {
@@ -291,17 +292,17 @@ fieldset:disabled .btn {
 .purple-bg {
   width: 100%;
   height: 10px;
-  background: $light-yellow;
+  background: $orange;
 }
 
 // assessment
 .assessment {
-  background-color: #91996a;
+  background-color: $navy-blue;
   color: #fff;
   padding: 40px 0px;
 
   h5 {
-    color: $yellow-color;
+    color: $orange;
     font-size: 18px;
     font-family: $poppins;
     font-weight: 300;
@@ -334,14 +335,14 @@ fieldset:disabled .btn {
   }
 
   a:hover {
-    color: $yellow-color;
+    color: $orange;
   }
 
   .journey-content {
     padding: 60px 0px 20px 40px;
 
     h6 {
-      color: $green-color;
+      color: $navy-blue;
       font-size: 16px;
       font-family: $poppins;
       font-weight: 500;
@@ -360,7 +361,7 @@ fieldset:disabled .btn {
       font-weight: 500;
       line-height: 50px;
       font-size: 50px;
-      color: $green-color;
+      color: $navy-blue;
     }
   }
 }
@@ -380,7 +381,7 @@ fieldset:disabled .btn {
       line-height: 12px;
 
       &:hover {
-        color: $yellow-color;
+        color: $orange;
       }
     }
   }
@@ -405,7 +406,7 @@ fieldset:disabled .btn {
 
       a {
         text-decoration: none;
-        color: $yellow-color;
+        color: $orange;
       }
     }
   }
@@ -420,7 +421,7 @@ fieldset:disabled .btn {
     object-fit: cover;
   }
   a {
-    color: $green-color;
+    color: $navy-blue;
   }
 
   .card-body {
@@ -444,10 +445,10 @@ fieldset:disabled .btn {
 
 .blog-details {
   a {
-    color: $green-color;
+    color: $navy-blue;
 
     &:hover {
-      color: $yellow-color;
+      color: $orange;
     }
   }
 
@@ -468,7 +469,7 @@ fieldset:disabled .btn {
 
   svg {
     font-size: 100px;
-    color: $green-color;
+    color: $navy-blue;
   }
 }
 
@@ -477,7 +478,7 @@ fieldset:disabled .btn {
   color: #000;
 
   h2 {
-    color: $green-color;
+    color: $navy-blue;
   }
 }
 
@@ -514,7 +515,7 @@ fieldset:disabled .btn {
 
   .quote-left {
     font-size: 40px;
-    color: $green-color;
+    color: $navy-blue;
   }
 }
 
@@ -547,7 +548,7 @@ fieldset:disabled .btn {
   width: 100%;
 
   .bg-main {
-    background-color: #91996ad6;
+    background-color: $navy-blue;
   }
 
   .text-content {
@@ -574,7 +575,7 @@ fieldset:disabled .btn {
 
     &:hover,
     &:focus {
-      border-color: $green-color;
+      border-color: $navy-blue;
     }
 
     @extend .remove-box-outline;
@@ -584,7 +585,7 @@ fieldset:disabled .btn {
     background-color: #ffffff;
     &:hover,
     &:focus {
-      border-color: $green-color;
+      border-color: $navy-blue;
     }
     &::placeholder {
       color: #a2a0a0;
@@ -601,7 +602,7 @@ fieldset:disabled .btn {
       line-height: 30px;
 
       &:hover {
-        color: $green-color !important;
+        color: $navy-blue !important;
       }
     }
 
@@ -619,22 +620,22 @@ fieldset:disabled .btn {
   h4 {
     font-weight: 900;
     line-height: 30px;
-    color: $green-color;
+    color: $navy-blue;
   }
 
   svg {
     font-size: 50px;
-    color: $green-color;
+    color: $navy-blue;
     padding: 20px 10px;
   }
   .card {
-    background-image: url("./img/bg-card.png");
+    // background-image: url("./img/bg-card.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 50px;
-    border-bottom: 3px solid $green-color;
-    height: 550px;
+    border-bottom: 3px solid $navy-blue;
+    height: 600px;
   }
 
   ol {
