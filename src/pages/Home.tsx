@@ -224,7 +224,7 @@ export default function App() {
           <div className="row">
             <div className="col-md-7">
               <h2 className="mt-4 mb-4">Ancient Financial Wisdom</h2>
-              <p className="pt-3">
+              <p className="pt-3 text-white">
                 In this insightful talk we discussed;
                 <ul>
                   <li>How do you make your money work for you?</li>
@@ -270,7 +270,7 @@ export default function App() {
                         />
                       </div>
                       <div className="col-md-11">
-                        <p className="card-text">
+                        <p className="card-text text-white">
                           <q>
                             {/* {testimony.testimony_description.length > 200
                               ? `${testimony.testimony_description.substring(

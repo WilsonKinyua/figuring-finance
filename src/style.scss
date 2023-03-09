@@ -10,7 +10,7 @@ body {
   font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f1ec;
+  background-color: #fff;
 }
 
 a {
@@ -134,7 +134,7 @@ fieldset:disabled .btn {
   display: none;
 }
 .navbar {
-  background-color: #f7f1ec;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
@@ -186,7 +186,7 @@ fieldset:disabled .btn {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #f7f1ec;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   height: 100%;
@@ -267,7 +267,7 @@ fieldset:disabled .btn {
   .form-guide {
     margin-top: 40px;
     .form-control {
-      background-color: #ffffff;
+      background-color: #f7f1ec;
       border-color: #4b4b4b66;
       border-width: 1px 1px 1px 1px;
       border-radius: 0px 0px 0px 0px;
@@ -431,7 +431,7 @@ fieldset:disabled .btn {
 
 .search-form {
   .form-control {
-    background-color: #ffffff;
+    background-color: #f7f1ec;
     border-color: #4b4b4b66;
     border-width: 1px 1px 1px 1px;
     border-radius: 0px 0px 0px 0px;
@@ -474,11 +474,11 @@ fieldset:disabled .btn {
 }
 
 .podcast {
-  background-color: #fff;
-  color: #000;
+  background-color: $navy-blue;
+  color: #fff;
 
   h2 {
-    color: $navy-blue;
+    color: $orange;
   }
 }
 
@@ -503,7 +503,7 @@ fieldset:disabled .btn {
 .testimonies {
   padding: 20px 0px;
   .card {
-    background-color: #fff;
+    background-color: $orange;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     .card-body {
@@ -634,6 +634,7 @@ fieldset:disabled .btn {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 50px;
+    border: 1px solid $navy-blue;
     border-bottom: 3px solid $navy-blue;
     height: 600px;
   }
