@@ -106,7 +106,7 @@ const quotes = [
 // const Services = [
 //   {
 //     id: 1,
-//     name: "Budgeting",
+//     title: "Budgeting",
 //     description:
 //     ""
 //   }

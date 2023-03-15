@@ -13,7 +13,7 @@ export default function AboutUs() {
           <div className="row">
             <div className="col-md-7">
               <div className="about-us-content pt-3 mt-4">
-                <h5 className="text-uppercase">ABOUT</h5>
+                <h5 className="text-uppercase orange-color">ABOUT</h5>
                 <h1 className="mt-3 text-capitalize main-color">
                   The Journey to Launch Story
                 </h1>
@@ -109,12 +109,12 @@ export default function AboutUs() {
                       to begin it can affect you mentally and even physically:
                     </p>
                     <p>
-                      <strong>Financial anxiety:</strong> where you worry
+                      <strong className="orange-color">Financial anxiety:</strong> where you worry
                       constantly about money and feel something bad could happen
                       to your money at any given moment
                     </p>
                     <p>
-                      <strong>Financial stress:</strong> According to a study
+                      <strong className="orange-color">Financial stress:</strong> According to a study
                       done in America “
                       <a
                         href="https://www.apa.org/news/press/releases/stress/2020/sia-mental-health-crisis.pdf"
@@ -153,19 +153,19 @@ export default function AboutUs() {
                     </h6>
                     <ul>
                       <li>
-                        <strong>Financial adulting:</strong> Something in your
+                        <strong className="orange-color">Financial adulting:</strong> Something in your
                         life wakes you up to start caring about your personal
                         finances it could be moving out, handling more
                         responsibilities etc.
                       </li>
                       <li>
-                        <strong>Investing in your financial literacy:</strong>{" "}
+                        <strong className="orange-color">Investing in your financial literacy:</strong>{" "}
                         Making an investment of money and/or time to learn how
                         to manage your money, to learn how money, banks and
                         financial systems really work.
                       </li>
                       <li>
-                        <strong>The bold step:</strong> Take the action to apply
+                        <strong className="orange-color">The bold step:</strong> Take the action to apply
                         what you have learnt. To change what needs to be changed
                         and do the WORK to better your money journey
                       </li>

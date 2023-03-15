@@ -169,7 +169,7 @@ export default function App() {
             <div className="row">
               <div className="col-md-12">
                 <div className="journey-content">
-                  <h5 className="text-uppercase">from our founder</h5>
+                  <h5 className="text-uppercase orange-color">from our founder</h5>
                   <h2 className="mt-4 mb-4">Welcome To Figuring Finance</h2>
                   <p>
                     I love to teach individuals how to do better with their
@@ -223,7 +223,7 @@ export default function App() {
         <div className="container">
           <div className="row">
             <div className="col-md-7">
-              <h2 className="mt-4 mb-4">Ancient Financial Wisdom</h2>
+              <h2 className="mt-4 mb-4 text-white">Ancient Financial Wisdom</h2>
               <p className="pt-3 text-white">
                 In this insightful talk we discussed;
                 <ul>

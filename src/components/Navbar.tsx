@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import $ from "jquery";
@@ -132,7 +132,7 @@ export default function Navbar() {
                     articles
                   </Link>
                 </li>
-                <li
+                {/* <li
                   className="nav-item display-sm-none"
                   onClick={() => {
                     $(".side-nav").css("display", "block").hide().slideDown();
@@ -158,7 +158,7 @@ export default function Navbar() {
                       Wealth creation
                     </Link>
                   </li>
-                </span>
+                </span> */}
               </ul>
             </div>
           </div>

@@ -6,9 +6,52 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function OneOnOneCoaching() {
+  const [module, setModule] = useState("");
+  const [email, setEmail] = useState("");
+  var [phone, setPhone] = useState("");
+
+  const [error, setError] = useState<string | null>(false as any);
+  const [success, setSuccess] = useState<string | null>(false as any);
+  const [preloader, setPreloader] = useState<boolean>(false);
+
+  const API_URL = "https://cms-figuring-finance.wezadevelopments.com";
+
+  const onEnrollModule = (e: { preventDefault: () => void }) => {
+    if (!phone) {
+      phone = "N/A";
+    }
+    e.preventDefault();
+    setPreloader(true);
+    if (email && module) {
+      fetch(`${API_URL}/api/enrollments`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          module,
+          email,
+          phone_number: phone,
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setPreloader(false);
+          setSuccess(data.message);
+        })
+        .catch((err) => {
+          setPreloader(false);
+          console.log(err);
+        });
+    } else {
+      setError("Please fill all fields");
+    }
+  };
+
   return (
     <div className="coaching">
       <div className="container">
@@ -43,7 +86,15 @@ export default function OneOnOneCoaching() {
                 </ol>
               </div>
               <div className="text-center">
-                <Link to="#" className="btn btn-primary btn-enroll-now">
+                <Link
+                  to="#"
+                  className="btn btn-primary btn-enroll-now"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onClick={() => {
+                    setModule("Module 1 - Level-Up - Personal Finances");
+                  }}
+                >
                   Enroll Now
                 </Link>
               </div>
@@ -74,7 +125,15 @@ export default function OneOnOneCoaching() {
                 </ol>
               </div>
               <div className="text-center">
-                <Link to="#" className="btn btn-primary btn-enroll-now">
+                <Link
+                  to="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onClick={() => {
+                    setModule("Module 2 - Boss Budgeting");
+                  }}
+                  className="btn btn-primary btn-enroll-now"
+                >
                   Enroll Now
                 </Link>
               </div>
@@ -107,7 +166,15 @@ export default function OneOnOneCoaching() {
                 </ol>
               </div>
               <div className="text-center">
-                <Link to="#" className="btn btn-primary btn-enroll-now">
+                <Link
+                  to="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onClick={() => {
+                    setModule("Module 3 - Investing for your best Life");
+                  }}
+                  className="btn btn-primary btn-enroll-now"
+                >
                   Enroll Now
                 </Link>
               </div>
@@ -134,7 +201,17 @@ export default function OneOnOneCoaching() {
                 </ol>
               </div>
               <div className="text-center">
-                <Link to="#" className="btn btn-primary btn-enroll-now">
+                <Link
+                  to="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onClick={() => {
+                    setModule(
+                      "Module 4 - Setting And Achieving Financial Goals"
+                    );
+                  }}
+                  className="btn btn-primary btn-enroll-now"
+                >
                   Enroll Now
                 </Link>
               </div>
@@ -147,7 +224,8 @@ export default function OneOnOneCoaching() {
               </div>
               <div className="card-body">
                 <h4 className="text-center text-capitalize">
-                  <span className="module orange-color">Module 5</span> - Debt Ditcher
+                  <span className="module orange-color">Module 5</span> - Debt
+                  Ditcher
                 </h4>
                 <h5 className="text-center">Price - Ksh.15,000</h5>
                 <ol>
@@ -161,9 +239,84 @@ export default function OneOnOneCoaching() {
                 </ol>
               </div>
               <div className="text-center">
-                <Link to="#" className="btn btn-primary btn-enroll-now">
+                <Link
+                  to="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onClick={() => {
+                    setModule("Module 5 - Debt Ditcher");
+                  }}
+                  className="btn btn-primary btn-enroll-now"
+                >
                   Enroll Now
                 </Link>
+              </div>
+            </div>
+          </div>
+          {/* modal */}
+          <div
+            className="modal fade"
+            id="exampleModal"
+            tabIndex={-1}
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLabel">
+                    How would you like to be contacted?
+                  </h5>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  {error && <div className="alert alert-danger">{error}</div>}
+                  {success && (
+                    <div className="alert alert-success">{success}</div>
+                  )}
+                  <form onSubmit={onEnrollModule}>
+                    <div className="mb-3">
+                      <label
+                        htmlFor="email"
+                        className="col-form-label required"
+                      >
+                        Email:
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        className="form-control"
+                        required
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                        }}
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label htmlFor="phone" className="col-form-label">
+                        Phone Number:
+                      </label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        className="form-control"
+                        onChange={(e) => {
+                          setPhone(e.target.value);
+                        }}
+                      />
+                    </div>
+                    <button type="submit" className="btn btn-primary">
+                      {preloader ? "Loading..." : "Save changes"}
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
