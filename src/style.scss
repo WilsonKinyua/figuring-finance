@@ -433,6 +433,10 @@ fieldset:disabled .btn {
   .card-body {
     height: 100px;
   }
+
+  ul li {
+    margin-left: 15px;
+  }
 }
 
 .search-form {
@@ -651,6 +655,21 @@ fieldset:disabled .btn {
       font-weight: 300;
       color: #2a2a2a;
     }
+  }
+}
+
+.blog-details {
+  ol {
+    list-style-type: none;
+    font-family: Poppins, sans-serif;
+    li {
+      line-height: 0px;
+      font-weight: 700;
+    }
+  }
+  ul li {
+    margin-left: 15px;
+    font-family: Poppins, sans-serif;
   }
 }
 
