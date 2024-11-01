@@ -9,7 +9,7 @@ import { getTestimonies } from "../fake-backend";
 import { useRef, useState } from "react";
 
 export default function App() {
-  const API_URL = "https://cms-figuring-finance.wezadevelopments.com";
+  const API_URL = "https://figuring-finance-email-notifications.vercel.app";
 
   const userName = useRef<HTMLInputElement>(null);
   const userEmail = useRef<HTMLInputElement>(null);
@@ -28,7 +28,6 @@ export default function App() {
   };
   const testimonies = getTestimonies();
 
-  // on submit of form
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setPreloader(true);
@@ -45,13 +44,19 @@ export default function App() {
           email,
         }),
       })
-        .then((res) => res.json())
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error('Error occurred while sending email. Please try again later');
+          }
+          return res.json();
+        })
         .then((data) => {
           setPreloader(false);
           setSuccess(data.message);
         })
         .catch((err) => {
           setPreloader(false);
+          setError(err.message);
           console.log(err);
         });
     } else {
@@ -243,7 +248,7 @@ export default function App() {
                   title="Jam 316 Financial Clinic - 12/10/2022 (Ancient Financial wisdom)"
                   // frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  // allowfullscreen
+                // allowfullscreen
                 ></iframe>
               </div>
             </div>

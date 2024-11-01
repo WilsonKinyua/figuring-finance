@@ -18,7 +18,7 @@ export default function OneOnOneCoaching() {
   const [success, setSuccess] = useState<string | null>(false as any);
   const [preloader, setPreloader] = useState<boolean>(false);
 
-  const API_URL = "https://cms-figuring-finance.wezadevelopments.com";
+  const API_URL = "https://figuring-finance-email-notifications.vercel.app";
 
   const onEnrollModule = (e: { preventDefault: () => void }) => {
     if (!phone) {
@@ -38,13 +38,19 @@ export default function OneOnOneCoaching() {
           phone_number: phone,
         }),
       })
-        .then((res) => res.json())
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error('Error occurred while sending email. Please try again later');
+          }
+          return res.json();
+        })
         .then((data) => {
           setPreloader(false);
           setSuccess(data.message);
         })
         .catch((err) => {
           setPreloader(false);
+          setError(err.message);
           console.log(err);
         });
     } else {
