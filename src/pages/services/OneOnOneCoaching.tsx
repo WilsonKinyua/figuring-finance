@@ -6,6 +6,7 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from 'axios';
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -20,41 +21,33 @@ export default function OneOnOneCoaching() {
 
   const API_URL = "https://figuring-finance-email-notifications.vercel.app";
 
-  const onEnrollModule = (e: { preventDefault: () => void }) => {
+  const onEnrollModule = async (e: { preventDefault: () => void }) => {
     if (!phone) {
       phone = "N/A";
     }
     e.preventDefault();
     setPreloader(true);
     if (email && module) {
-      fetch(`${API_URL}/api/enrollments`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          module,
-          email,
-          phone_number: phone,
-        }),
-      })
-        .then((res) => {
-          if (!res.ok) {
-            throw new Error('Error occurred while sending email. Please try again later');
-          }
-          return res.json();
-        })
-        .then((data) => {
-          setPreloader(false);
-          setSuccess(data.message);
-        })
-        .catch((err) => {
-          setPreloader(false);
-          setError(err.message);
-          console.log(err);
+      try {
+        const response = await axios.get(`${API_URL}/api/enrollment`, {
+          params: {
+            module,
+            email,
+            phone_number: phone,
+          },
+          headers: {
+            "Content-Type": "application/json",
+          },
         });
+        setSuccess(response.data.message);
+      } catch (error) {
+        setError("Enrollment failed.");
+      } finally {
+        setPreloader(false);
+      }
     } else {
-      setError("Please fill all fields");
+      setError("Email and module are required.");
+      setPreloader(false);
     }
   };
 

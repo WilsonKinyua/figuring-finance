@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,39 +29,21 @@ export default function App() {
   };
   const testimonies = getTestimonies();
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setPreloader(true);
-    const name = userName.current?.value;
-    const email = userEmail.current?.value;
-    if (name && email) {
-      fetch(`${API_URL}/api/subscriptions`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    try {
+      const response = await axios.get(API_URL + "/api/subscription", {
+        params: {
+          name: userName.current?.value,
+          email: userEmail.current?.value,
         },
-        body: JSON.stringify({
-          name,
-          email,
-        }),
-      })
-        .then((res) => {
-          if (!res.ok) {
-            throw new Error('Error occurred while sending email. Please try again later');
-          }
-          return res.json();
-        })
-        .then((data) => {
-          setPreloader(false);
-          setSuccess(data.message);
-        })
-        .catch((err) => {
-          setPreloader(false);
-          setError(err.message);
-          console.log(err);
-        });
-    } else {
-      setError("Please fill all fields");
+      });
+      setSuccess(response.data.message);
+    } catch (error) {
+      setError("Error occurred, please try again later");
+    } finally {
+      setPreloader(false);
     }
   };
 
