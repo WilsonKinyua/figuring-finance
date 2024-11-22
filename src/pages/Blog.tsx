@@ -9,7 +9,7 @@ export default function Blog() {
         <div className="col-md-12 pt-5 pb-3">
           <h1>Articles</h1>
         </div>
-        {blogs.map((blog) => (
+        {blogs.slice().reverse().map((blog) => (
           <div className="col-md-3 text-center" key={blog.id}>
             <Link to={`/article/${blog.slug}`}>
               <div className="card mb-3 border-none">

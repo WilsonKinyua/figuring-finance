@@ -148,7 +148,7 @@ export default function OneOnOneCoaching() {
                   <span className="module orange-color">Module 3</span> -
                   Investing for your best Life
                 </h4>
-                <h5 className="text-center">Price - Ksh.21,000</h5>
+                <h5 className="text-center">Price - Ksh.25,000</h5>
                 <ol>
                   <li>Time value of money</li>
                   <li>How investing works and compound interest</li>
