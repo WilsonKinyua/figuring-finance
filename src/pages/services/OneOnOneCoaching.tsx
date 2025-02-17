@@ -68,7 +68,7 @@ export default function OneOnOneCoaching() {
                   <span className="module orange-color">Module 1</span> -{" "}
                   Level-Up - Personal Finances
                 </h4>
-                <h5 className="text-center">Price - Ksh.14,000</h5>
+                {/* <h5 className="text-center">Price - Ksh.14,000</h5> */}
                 <ol>
                   <li>The right mindset is gold</li>
                   <li>The lifestyle "trap"</li>
@@ -109,7 +109,7 @@ export default function OneOnOneCoaching() {
                   <span className="module orange-color">Module 2</span> - Boss
                   Budgeting
                 </h4>
-                <h5 className="text-center">Price - Ksh.8,000</h5>
+                {/* <h5 className="text-center">Price - Ksh.8,000</h5> */}
                 <ol>
                   <li>Deep dive of the importance of budgeting</li>
                   <li>Proven budgeting methods</li>
@@ -148,7 +148,7 @@ export default function OneOnOneCoaching() {
                   <span className="module orange-color">Module 3</span> -
                   Investing for your best Life
                 </h4>
-                <h5 className="text-center">Price - Ksh.25,000</h5>
+                {/* <h5 className="text-center">Price - Ksh.25,000</h5> */}
                 <ol>
                   <li>Time value of money</li>
                   <li>How investing works and compound interest</li>
@@ -189,7 +189,7 @@ export default function OneOnOneCoaching() {
                   <span className="module orange-color">Module 4</span> -
                   Setting And Achieving Financial Goals
                 </h4>
-                <h5 className="text-center">Price - Ksh.7,000</h5>
+                {/* <h5 className="text-center">Price - Ksh.7,000</h5> */}
                 <ol>
                   <li>Unpacking your Value-system</li>
                   <li>Knowing your why</li>
@@ -226,7 +226,7 @@ export default function OneOnOneCoaching() {
                   <span className="module orange-color">Module 5</span> - Debt
                   Ditcher
                 </h4>
-                <h5 className="text-center">Price - Ksh.10,500</h5>
+                {/* <h5 className="text-center">Price - Ksh.10,500</h5> */}
                 <ol>
                   <li>Debt repayment avenues (Strategies to deal with debt)</li>
                   <li>Understanding interest when dealing with debt</li>
