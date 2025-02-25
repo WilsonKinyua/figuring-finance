@@ -120,6 +120,14 @@ export default function Navbar() {
                         1:1 Coaching
                       </Link>
                     </li>
+                    <li className="nav-item">
+                      <Link
+                        to="/services/corporate-training"
+                        className="dropdown-item"
+                      >
+                        Corporate Training
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li className="nav-item">
