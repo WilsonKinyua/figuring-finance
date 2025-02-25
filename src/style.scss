@@ -1,13 +1,13 @@
-@import "~bootstrap/scss/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap");
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
 
-$poppins: "Poppins", sans-serif;
+$poppins: 'Poppins', sans-serif;
 $navy-blue: #2f455c;
 $orange: #f1592a;
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -34,7 +34,7 @@ a {
 
 .line-below::after {
   background-color: $navy-blue;
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   margin: 15px 0;
@@ -80,7 +80,7 @@ p {
 }
 
 label.required::after {
-  content: " *";
+  content: ' *';
   color: red;
 }
 
@@ -236,7 +236,7 @@ fieldset:disabled .btn {
 
 // homepage
 .homepage {
-  background-image: url("./img/Figuring\ Finance\ Landing.png");
+  background-image: url('./img/Figuring\ Finance\ Landing.png');
   background-repeat: no-repeat;
   width: 100%;
   // height: 90vh;
@@ -286,7 +286,7 @@ fieldset:disabled .btn {
   }
 
   .signature {
-    background-image: url("./img/signature.png");
+    background-image: url('./img/signature.png');
     height: 100px;
     width: 200px;
     background-position: center;
@@ -551,7 +551,7 @@ fieldset:disabled .btn {
 }
 
 .opportunities {
-  background-image: url("https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-image: url('https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -673,4 +673,10 @@ fieldset:disabled .btn {
   }
 }
 
-@import "__responsive";
+.carousel .control-dots .dot {
+  background-color: $orange !important;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+@import '__responsive';

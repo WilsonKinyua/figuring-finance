@@ -1,7 +1,11 @@
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import standing from "../../img/1.jpeg";
+import standing2 from "../../img/3.jpeg";
+import standing3 from "../../img/4.jpeg";
 
 export default function CorporateTraining() {
   const [email, setEmail] = useState("");
@@ -80,9 +84,26 @@ export default function CorporateTraining() {
                 </div>
               </div>
               <div className="col-md-5">
-                <div className="img-wrapper">
-                  <img src={standing} alt="Journey" loading="lazy" />
-                </div>
+                <Carousel
+                  autoPlay
+                  infiniteLoop
+                >
+                  <div>
+                    <div className="img-wrapper">
+                      <img src={standing} alt="Journey" loading="lazy" />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="img-wrapper">
+                      <img src={standing2} alt="Journey" loading="lazy" />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="img-wrapper">
+                      <img src={standing3} alt="Journey" loading="lazy" />
+                    </div>
+                  </div>
+                </Carousel>
               </div>
             </div>
             <p>
