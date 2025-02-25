@@ -128,6 +128,14 @@ export default function Navbar() {
                         Corporate Training
                       </Link>
                     </li>
+                    <li className="nav-item">
+                      <Link
+                        to="/services/juniors-program"
+                        className="dropdown-item"
+                      >
+                        Juniors Program
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li className="nav-item">
