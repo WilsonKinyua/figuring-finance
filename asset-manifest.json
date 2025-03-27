@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31d4fad3.css",
+    "main.js": "/static/js/main.e744f74b.js",
+    "static/media/journey.jpeg": "/static/media/journey.b1e0765ab71ccdf62b21.jpeg",
+    "static/media/4.jpeg": "/static/media/4.10a52dc41d0b742c2bb8.jpeg",
+    "static/media/1.jpeg": "/static/media/1.46563ebfb58fec744986.jpeg",
+    "static/media/3.jpeg": "/static/media/3.2b047620d32435be717e.jpeg",
+    "static/media/Figuring Finance Landing.png": "/static/media/Figuring Finance Landing.0cfbc41099d1f9ca5985.png",
+    "static/media/5.jpeg": "/static/media/5.eb3ea1967cb9d0394f54.jpeg",
+    "static/media/7.jpeg": "/static/media/7.c5f2d1444246ce7ff811.jpeg",
+    "static/media/6.jpeg": "/static/media/6.2b9be3812bc199ac1195.jpeg",
+    "static/media/about.jpeg": "/static/media/about.4199df452faed303300a.jpeg",
+    "static/media/stand.jpeg": "/static/media/stand.d5bfea5a646a04d4bb10.jpeg",
+    "static/media/logo.png": "/static/media/logo.bc576e185f889e5a4d7b.png",
+    "static/media/signature.png": "/static/media/signature.d687083df27414e3bf79.png",
+    "index.html": "/index.html",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "main.31d4fad3.css.map": "/static/css/main.31d4fad3.css.map",
+    "main.e744f74b.js.map": "/static/js/main.e744f74b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d4fad3.css",
+    "static/js/main.e744f74b.js"
+  ]
+}
